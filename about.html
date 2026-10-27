@@ -37,19 +37,26 @@
 <div class="prose" style="margin-top:24px">
   <h1 data-i18n="about.title"></h1>
   <p>This website is a working demonstration of a state-wide tourism portal for Karnataka. It covers
-  all 31 districts with 172 destination records, 62 homestay listings, 31 guide profiles and 12 cultural
-  experiences, and it implements the whole journey: search, filters, a map, a booking form, a simulated
-  payment, a printable ticket and a booking history.</p>
+  all 31 districts with 524 destination records — 183 of them temples — 62 homestay
+  listings, 31 guide profiles and 12 cultural experiences, and it implements the whole journey: search,
+  filters, a map, a booking form, a simulated payment, a printable ticket and a booking history.</p>
 
   <h2>What is real and what is not</h2>
-  <p>Destination names, districts, categories and descriptions are compiled from public sources, and the
-  coordinates were checked against OpenStreetMap — where a match could not be confirmed, the page says the
-  coordinate is approximate. Photographs come from Wikimedia Commons and are credited with the author and
-  licence under each gallery. Entry fees and opening hours change often, so they appear as indicative notes
-  with a reminder to confirm at the site. No fee or timing was invented to fill a field.</p>
+  <p>Destination records come from two places. 172 were written and checked by hand: coordinates
+  geocoded against OpenStreetMap, descriptions compiled from public sources, fees and timings stated only
+  where they could be confirmed. The other 352 were harvested from Wikidata and English Wikipedia —
+  each one is a real place with its own Wikidata item, coordinates from that record, and a description taken
+  from the article's lead paragraph. Harvested pages link back to their source article, and where the
+  district was inferred from the coordinates rather than read from the administrative record, the page says
+  so. Their entry fees and opening hours are marked "not verified" rather than guessed.</p>
+  <p>Photographs come from Wikimedia Commons, with the author and licence stored per image. Entry fees and
+  opening hours change often, so they appear as indicative notes with a reminder to confirm at the site.
+  No fee or timing was invented to fill a field.</p>
   <p>Homestays, guides and cultural experiences here are <strong>demonstration listings</strong>. They are
   labelled DEMO wherever they appear, no real property or person is represented, and nothing on this site is
-  a real reservation.</p>
+  a real reservation. A real homestay directory needs the state tourism department's registered list, which
+  is not published in a machine-readable form; those listings can be dropped in without code changes once
+  they are available.</p>
 
   <h2>Payments</h2>
   <p>Every payment screen is simulated. No payment gateway is connected, nothing you type is stored or sent
@@ -58,20 +65,18 @@
 
   <h2>Where your bookings live</h2>
   <p>This is a static website: there is no server and no database. Bookings are saved in your own browser's
-  local storage, which means they are visible only on this device and disappear if you clear site data. The
-  full application version of this portal keeps bookings in a database with user accounts and moderation.</p>
+  local storage, which means they are visible only on this device and disappear if you clear site data.</p>
 
   <h2>Languages and themes</h2>
   <p>The interface is available in English, हिन्दी and ಕನ್ನಡ, and your choice is remembered. Six headline
   descriptions also have checked Hindi and Kannada translations; where a translation does not exist the page
-  says so instead of showing English as if it were translated. The light and dark themes are both built on the
-  same contrast-checked palette, and the choice is remembered too.</p>
+  says so instead of showing English as if it were translated. Light and dark themes share one
+  contrast-checked palette, and the choice is remembered too.</p>
 
   <h2>Technology</h2>
   <p>Plain HTML, CSS and JavaScript with no build step and no framework. Leaflet with OpenStreetMap for the
-  map, the `qrcode-generator` library for the demo ticket QR code, and `localStorage` for the booking flow.
-  The data is generated from a single JSON file, so adding a district or a destination is a data change, not
-  a code change.</p>
+  map, qrcode-generator for the demo ticket QR, and localStorage for the booking flow. The data is generated
+  from a single JSON file, so adding a place is a data change, not a code change.</p>
 </div>
 
 </main>

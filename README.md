@@ -4,10 +4,10 @@ A complete tourism website for Karnataka that runs in a browser with **no server
 no build step**. Open `index.html` and it works — on a laptop, from a USB stick, or hosted on any
 static host (GitHub Pages, Netlify, Cloudflare Pages, S3).
 
-Coverage: all 31 districts, 172 destinations, 62 homestay listings, 31 guide profiles and
-12 cultural experiences, with search, filters, an interactive map, English / हिन्दी / ಕನ್ನಡ
-interface, light and dark themes, a demo-only payment flow, printable demo tickets with QR codes,
-and a booking history with CSV export.
+Coverage: all 31 districts, **524 destination records** (183 of them temples), 62 homestay
+listings, 31 guide profiles and 12 cultural experiences, with search, filters, an interactive map,
+English / हिन्दी / ಕನ್ನಡ interface, light and dark themes, a demo-only payment flow, printable demo
+tickets with QR codes, and a booking history with CSV export.
 
 ---
 
@@ -73,6 +73,12 @@ offline.
   records, not reservations.
 - **Homestays, guides and experiences are demonstration listings.** They are badged DEMO and marked
   `is_demo` in the data. No real property or person is represented.
+- **Provenance.** 172 records were written and checked by hand; the other 352 were harvested from
+  Wikidata and English Wikipedia (each has a Wikidata item, coordinates from that record, and a
+  description from the article lead, with a link back to the source article on the page). Where a
+  district was inferred from coordinates rather than read from the administrative record, the page
+  says "district estimated from coordinates". Harvested listings show entry fees and hours as
+  "not verified" rather than inventing them.
 - **Destinations are real, gaps are shown.** Descriptions, districts and categories are compiled from
   public sources; coordinates were checked against OpenStreetMap, and where no reliable match was
   found the page says the coordinate is approximate. Fees and opening hours appear as indicative

@@ -384,6 +384,12 @@
               d.lat + "&mlon=" + d.lon + "#map=14/" + d.lat + "/" + d.lon + '">' + t("common.directions") + "</a>" +
             '<a class="btn ghost sm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=' +
               d.lat + "," + d.lon + '">Google Maps</a></div>' +
+          (d.source && d.source !== "curated"
+            ? '<p class="small" style="margin:12px 0 0">' + t("common.source") + ": " +
+              (d.article ? '<a href="' + esc(d.article) + '" target="_blank" rel="noopener" style="color:var(--brand)">' +
+                (d.source === "wikipedia" ? "Wikipedia" : "Wikidata") + "</a>" : (d.source === "wikipedia" ? "Wikipedia" : "Wikidata")) +
+              (d.district_source === "nearest" ? " · " + t("common.district_est") : "") + "</p>"
+            : "") +
           '<p class="small muted" style="margin:12px 0 0">' + t("common.data_note") + "</p></div>" +
         (related.length ? '<section class="block"><h2>' + t("common.related") + '</h2><div class="grid tight">' +
           related.map(function (r) {
@@ -964,6 +970,15 @@
     }).join(""));
     setText("#result-count", DATA.experiences.length);
   }
+
+  // a photo that fails to load should not leave a broken-image icon behind
+  document.addEventListener("error", function (e) {
+    var el = e.target;
+    if (el && el.tagName === "IMG") {
+      el.style.visibility = "hidden";
+      if (el.parentElement) el.parentElement.classList.add("img-missing");
+    }
+  }, true);
 
   document.addEventListener("DOMContentLoaded", function () {
     applyI18n();
