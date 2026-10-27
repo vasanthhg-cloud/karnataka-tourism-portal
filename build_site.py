@@ -307,7 +307,6 @@ def header(active):
         <option value="kn">ಕನ್ನಡ</option>
       </select>
       <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">☾</button>
-      <div id="auth-slot"></div>
     </div>
   </div>
 </header>""" % links
@@ -373,8 +372,6 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
 <script src="assets/js/data.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/content.js"></script>
-<script src="assets/js/config.js"></script>
-<script src="assets/js/auth.js"></script>
 %(scripts)s
 <script src="assets/js/app.js"></script>
 </body>
@@ -603,14 +600,6 @@ def build_pages():
 """
     page("bookings.html", "bookings", "my.title", bookings_body)
 
-    account = """
-<div class="section-head" style="margin-top:24px">
-  <h1 style="font-size:1.7rem" data-i18n="auth.account_title"></h1>
-</div>
-<div id="account" style="max-width:520px"></div>
-"""
-    page("account.html", "account", "auth.account_title", account)
-
     page("pay.html", "pay", "pay.title", '<div id="pay"></div>',
          title_fallback="Demo payment · Karnataka Tourism Portal")
     page("booking.html", "booking", "booking.summary", '<div id="booking"></div>',
@@ -649,15 +638,13 @@ def build_pages():
   is not published in a machine-readable form; those listings can be dropped in without code changes once
   they are available.</p>
 
-  <h2>Signing in and booking</h2>
-  <p>Browsing is open to everyone. Booking a ticket or a stay needs a verified mobile number:
-  you enter your number, one one-time code is generated, and it is valid for five minutes.
-  Requesting a new code always produces a different one and cancels the previous code, so only
-  the newest OTP can ever be verified, and a code that has been used cannot be replayed.</p>
-  <p>On this static build there is no server and no SMS gateway, so the code is shown on screen
-  in a "simulated SMS" panel instead of being texted, and the verification state is kept in your
-  browser. The Flask version of this project sends the code by SMS, stores only a hash, and keeps
-  the verified session on the server — the rules are the same, the trust boundary is not.</p>
+  <h2>Booking</h2>
+  <p>There is no account and no sign-in: browsing and booking are open to everyone. A booking
+  needs only the name, email and phone you type on the form, and the record is kept in your own
+  browser.</p>
+  <p>Mobile OTP sign-in was built and then removed at the owner's request. The code is still in the
+  repository — <code>assets/js/auth.js</code> plus the <code>otp-service/</code> worker and the
+  Flask routes — so it can be switched back on later without rewriting it.</p>
 
   <h2>Payments</h2>
   <p>Every payment screen is simulated. No payment gateway is connected, nothing you type is stored or sent

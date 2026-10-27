@@ -62,42 +62,22 @@ offline.
 
 ---
 
-## 2a. Signing in (mobile OTP)
+## 2a. Booking (no account, no sign-in)
 
-Browsing needs no account. **Booking does.** The site never displays an OTP: the code is
-generated and texted by a small backend in `otp-service/`, and only the code you type is
-sent back for verification.
+Browsing and booking are open to everyone — there is no sign-in button and no account.
+A booking needs only the name, email and phone typed into the form; the record is stored in
+your browser, and the demo ticket follows from there.
 
-1. Enter your mobile number (on a booking panel, or from *Sign in*).
-2. The service generates one OTP, texts it to that number and stores only a hash.
-3. The code is valid for **5 minutes**. Requesting a new one generates a different code and
-   cancels the previous one, so only the newest OTP verifies, and a used code cannot be replayed.
-4. Five wrong attempts burn the code; 30-second resend cooldown, 5 requests per number per hour.
-5. Once verified, the signed session is kept in the browser, so you go straight to the booking
-   form next time — no re-registration.
+Mobile OTP sign-in was built earlier and then removed at the owner's request. The code is kept
+in the repository so it can be switched back on without being rewritten:
 
-### Turning it on
+- `assets/js/auth.js` and `assets/js/config.js` — the browser side (currently not loaded by any page)
+- `otp-service/` — the Cloudflare Worker that sends the SMS and verifies the code
+- the Flask app in `karnataka-tourism.zip` — server-side OTP with the same rules
 
-Sign-in stays switched off until the service is deployed — the site will not invent a code:
-
-```bash
-cd otp-service
-npm install -g wrangler && wrangler login
-wrangler kv namespace create OTP_KV        # put the id in wrangler.toml
-wrangler secret put OTP_SECRET
-wrangler secret put MSG91_AUTH_KEY         # or FAST2SMS_API_KEY / TWILIO_*
-wrangler deploy
-```
-
-Then set the URL it prints in `assets/js/config.js`:
-
-```js
-window.KT_OTP_API = "https://karnataka-otp.<your-subdomain>.workers.dev";
-```
-
-Indian transactional SMS requires DLT registration (entity + template) with your provider;
-that is done in your name on your account. See `otp-service/README.md` for the provider
-variables and the 13 local tests.
+To re-enable: add `<script src="assets/js/config.js"></script>` and
+`<script src="assets/js/auth.js"></script>` back before `app.js` in `build_site.py`, restore the
+gate in `bookingPanelHTML`, deploy the worker and set its URL in `config.js`.
 
 ## 3. Honest labelling
 
