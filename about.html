@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nav.about</title>
+<meta name="description" content="District-wise tourism portal for Karnataka: destinations, homestays, guides, cultural experiences and demo ticket booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+</head>
+<body data-page="about">
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html">
+      <span class="mark" aria-hidden="true">ಕ</span>
+      <span><span data-i18n="app.name">Smart Local Tourism Business Portal – Karnataka</span>
+      <small data-i18n="app.tagline"></small></span>
+    </a>
+    <nav class="main"><a href="index.html" data-i18n="nav.home">nav.home</a><a href="destinations.html" data-i18n="nav.destinations">nav.destinations</a><a href="homestays.html" data-i18n="nav.homestays">nav.homestays</a><a href="guides.html" data-i18n="nav.guides">nav.guides</a><a href="experiences.html" data-i18n="nav.experiences">nav.experiences</a><a href="map.html" data-i18n="nav.map">nav.map</a><a href="bookings.html" data-i18n="nav.bookings">nav.bookings</a><a href="about.html" data-i18n="nav.about" class="active">nav.about</a><a href="contact.html" data-i18n="nav.contact">nav.contact</a></nav>
+    <div class="tools">
+      <select id="lang-select" data-i18n-aria="common.language" style="width:auto">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="kn">ಕನ್ನಡ</option>
+      </select>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">☾</button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+<div class="prose" style="margin-top:24px">
+  <h1 data-i18n="about.title"></h1>
+  <p>This website is a working demonstration of a state-wide tourism portal for Karnataka. It covers
+  all 31 districts with 172 destination records, 62 homestay listings, 31 guide profiles and 12 cultural
+  experiences, and it implements the whole journey: search, filters, a map, a booking form, a simulated
+  payment, a printable ticket and a booking history.</p>
+
+  <h2>What is real and what is not</h2>
+  <p>Destination names, districts, categories and descriptions are compiled from public sources, and the
+  coordinates were checked against OpenStreetMap — where a match could not be confirmed, the page says the
+  coordinate is approximate. Photographs come from Wikimedia Commons and are credited with the author and
+  licence under each gallery. Entry fees and opening hours change often, so they appear as indicative notes
+  with a reminder to confirm at the site. No fee or timing was invented to fill a field.</p>
+  <p>Homestays, guides and cultural experiences here are <strong>demonstration listings</strong>. They are
+  labelled DEMO wherever they appear, no real property or person is represented, and nothing on this site is
+  a real reservation.</p>
+
+  <h2>Payments</h2>
+  <p>Every payment screen is simulated. No payment gateway is connected, nothing you type is stored or sent
+  anywhere, and the transaction IDs are generated in your browser. The screens say so, deliberately, on
+  every page.</p>
+
+  <h2>Where your bookings live</h2>
+  <p>This is a static website: there is no server and no database. Bookings are saved in your own browser's
+  local storage, which means they are visible only on this device and disappear if you clear site data. The
+  full application version of this portal keeps bookings in a database with user accounts and moderation.</p>
+
+  <h2>Languages and themes</h2>
+  <p>The interface is available in English, हिन्दी and ಕನ್ನಡ, and your choice is remembered. Six headline
+  descriptions also have checked Hindi and Kannada translations; where a translation does not exist the page
+  says so instead of showing English as if it were translated. The light and dark themes are both built on the
+  same contrast-checked palette, and the choice is remembered too.</p>
+
+  <h2>Technology</h2>
+  <p>Plain HTML, CSS and JavaScript with no build step and no framework. Leaflet with OpenStreetMap for the
+  map, the `qrcode-generator` library for the demo ticket QR code, and `localStorage` for the booking flow.
+  The data is generated from a single JSON file, so adding a district or a destination is a data change, not
+  a code change.</p>
+</div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="mark" aria-hidden="true">ಕ</span>
+          <span data-i18n="app.name"></span></div>
+        <p class="small muted" data-i18n="footer.demo"></p>
+      </div>
+      <div>
+        <h4 data-i18n="nav.destinations"></h4>
+        <a href="destinations.html" data-i18n="nav.destinations"></a>
+        <a href="homestays.html" data-i18n="nav.homestays"></a>
+        <a href="guides.html" data-i18n="nav.guides"></a>
+        <a href="experiences.html" data-i18n="nav.experiences"></a>
+      </div>
+      <div>
+        <h4 data-i18n="nav.bookings"></h4>
+        <a href="bookings.html" data-i18n="nav.bookings"></a>
+        <a href="map.html" data-i18n="nav.map"></a>
+        <a href="about.html" data-i18n="nav.about"></a>
+      </div>
+      <div>
+        <h4 data-i18n="nav.contact"></h4>
+        <a href="contact.html" data-i18n="nav.contact"></a>
+        <a href="ticket.html" data-i18n="ticket.title"></a>
+      </div>
+    </div>
+    <div class="legal">
+      <span data-i18n="footer.data"></span> · <span data-i18n="common.data_note"></span><br>
+      <span data-i18n="site.note"></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/content.js"></script>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

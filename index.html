@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Local Tourism Business Portal – Karnataka</title>
+<meta name="description" content="District-wise tourism portal for Karnataka: destinations, homestays, guides, cultural experiences and demo ticket booking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+</head>
+<body data-page="home">
+
+<header class="site">
+  <div class="wrap topbar">
+    <a class="brand" href="index.html">
+      <span class="mark" aria-hidden="true">ಕ</span>
+      <span><span data-i18n="app.name">Smart Local Tourism Business Portal – Karnataka</span>
+      <small data-i18n="app.tagline"></small></span>
+    </a>
+    <nav class="main"><a href="index.html" data-i18n="nav.home" class="active">nav.home</a><a href="destinations.html" data-i18n="nav.destinations">nav.destinations</a><a href="homestays.html" data-i18n="nav.homestays">nav.homestays</a><a href="guides.html" data-i18n="nav.guides">nav.guides</a><a href="experiences.html" data-i18n="nav.experiences">nav.experiences</a><a href="map.html" data-i18n="nav.map">nav.map</a><a href="bookings.html" data-i18n="nav.bookings">nav.bookings</a><a href="about.html" data-i18n="nav.about">nav.about</a><a href="contact.html" data-i18n="nav.contact">nav.contact</a></nav>
+    <div class="tools">
+      <select id="lang-select" data-i18n-aria="common.language" style="width:auto">
+        <option value="en">English</option>
+        <option value="hi">हिन्दी</option>
+        <option value="kn">ಕನ್ನಡ</option>
+      </select>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">☾</button>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+
+<section class="hero">
+  <img class="bg" id="hero-img" alt="" referrerpolicy="no-referrer"
+       src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Mysore_Palace_illuminated.jpg/1280px-Mysore_Palace_illuminated.jpg">
+  <div class="shade"></div>
+  <div class="inner">
+    <h1 data-i18n="hero.title"></h1>
+    <p data-i18n="hero.subtitle"></p>
+    <form class="searchbar" action="destinations.html" method="get" autocomplete="off" id="hero-search">
+      <input type="search" name="q" data-suggest="hero-suggest" data-i18n-ph="hero.search_placeholder">
+      <div class="suggest" id="hero-suggest"></div>
+      <button class="btn" type="submit" data-i18n="search.title"></button>
+    </form>
+  </div>
+  <span class="credit">Photo: Wikimedia Commons</span>
+</section>
+
+<div class="stat-row">
+  <div class="stat"><b id="stat-destinations">0</b><span data-i18n="home.stat_destinations"></span></div>
+  <div class="stat"><b id="stat-districts">0</b><span data-i18n="home.stat_districts"></span></div>
+  <div class="stat"><b id="stat-homestays">0</b><span data-i18n="home.stat_homestays"></span></div>
+  <div class="stat"><b id="stat-experiences">0</b><span data-i18n="home.stat_experiences"></span></div>
+</div>
+
+<section class="block">
+  <div class="section-head"><h2 data-i18n="home.featured"></h2>
+    <a class="btn sm ghost" href="destinations.html" data-i18n="home.view_all"></a></div>
+  <div class="grid" id="featured"></div>
+</section>
+
+<section class="block">
+  <div class="section-head"><h2 data-i18n="home.popular_homestays"></h2>
+    <a class="btn sm ghost" href="homestays.html" data-i18n="home.view_all"></a></div>
+  <div class="grid" id="popular"></div>
+</section>
+
+<section class="block">
+  <div class="section-head"><h2 data-i18n="home.recommended"></h2>
+    <a class="btn sm ghost" href="experiences.html" data-i18n="home.view_all"></a></div>
+  <div class="grid" id="experiences"></div>
+</section>
+
+<section class="block">
+  <div class="section-head"><h2 data-i18n="home.districts"></h2></div>
+  <div class="district-list" id="district-grid"></div>
+</section>
+
+<section class="block">
+  <div class="section-head"><h2 data-i18n="home.recent"></h2></div>
+  <div class="grid" id="recent"></div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="brand" style="margin-bottom:8px"><span class="mark" aria-hidden="true">ಕ</span>
+          <span data-i18n="app.name"></span></div>
+        <p class="small muted" data-i18n="footer.demo"></p>
+      </div>
+      <div>
+        <h4 data-i18n="nav.destinations"></h4>
+        <a href="destinations.html" data-i18n="nav.destinations"></a>
+        <a href="homestays.html" data-i18n="nav.homestays"></a>
+        <a href="guides.html" data-i18n="nav.guides"></a>
+        <a href="experiences.html" data-i18n="nav.experiences"></a>
+      </div>
+      <div>
+        <h4 data-i18n="nav.bookings"></h4>
+        <a href="bookings.html" data-i18n="nav.bookings"></a>
+        <a href="map.html" data-i18n="nav.map"></a>
+        <a href="about.html" data-i18n="nav.about"></a>
+      </div>
+      <div>
+        <h4 data-i18n="nav.contact"></h4>
+        <a href="contact.html" data-i18n="nav.contact"></a>
+        <a href="ticket.html" data-i18n="ticket.title"></a>
+      </div>
+    </div>
+    <div class="legal">
+      <span data-i18n="footer.data"></span> · <span data-i18n="common.data_note"></span><br>
+      <span data-i18n="site.note"></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/content.js"></script>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
