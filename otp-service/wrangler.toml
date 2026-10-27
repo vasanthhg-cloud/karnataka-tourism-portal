@@ -1,0 +1,22 @@
+# Cloudflare Worker configuration for the OTP service.
+# Deploy:  npx wrangler deploy
+# Secrets: npx wrangler secret put MSG91_AUTH_KEY   (and the others you use)
+name = "karnataka-otp"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# One KV namespace holds OTP records and rate counters.
+# Create it with:  npx wrangler kv namespace create OTP_KV
+# then paste the id below.
+[[kv_namespaces]]
+binding = "OTP_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+[vars]
+# The site that is allowed to call this worker.
+ALLOWED_ORIGIN = "https://vasanthhg-cloud.github.io"
+# msg91 | fast2sms | twilio  (set the matching secrets too)
+SMS_PROVIDER = "msg91"
+MSG91_SENDER_ID = "KATOUR"
+# MSG91_TEMPLATE_ID, MSG91_AUTH_KEY, FAST2SMS_API_KEY, TWILIO_* and OTP_SECRET
+# are secrets — set them with `wrangler secret put`, never in this file.
