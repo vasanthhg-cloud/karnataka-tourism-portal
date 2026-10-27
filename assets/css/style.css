@@ -288,3 +288,24 @@ footer.site a:hover{color:var(--brand)}
   color:var(--accent);margin-bottom:4px}
 .otp-code{font-size:1.15rem;letter-spacing:.22em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 #auth-slot{display:flex;gap:6px;align-items:center}
+
+/* ---------- "OTP sent" message box ---------- */
+.toast-wrap{position:fixed;top:78px;right:18px;z-index:1200;display:flex;flex-direction:column;
+  gap:10px;max-width:min(380px,calc(100vw - 36px));pointer-events:none}
+.toast{pointer-events:auto;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--brand);
+  border-radius:12px;box-shadow:var(--shadow);padding:12px 40px 12px 14px;font-size:.88rem;
+  animation:toastIn .22s ease-out;position:relative}
+.toast.error{border-left-color:var(--danger)}
+.toast.warning{border-left-color:var(--accent)}
+.toast b{display:block;font-size:.92rem;margin-bottom:2px}
+.toast .close{position:absolute;top:8px;right:8px;border:none;background:none;color:var(--muted);
+  cursor:pointer;font-size:1rem;line-height:1;padding:4px}
+@keyframes toastIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+@media(max-width:560px){.toast-wrap{left:12px;right:12px;top:70px;max-width:none}}
+.otp-sent{background:color-mix(in srgb,var(--brand) 12%,transparent);border:1px solid var(--brand);
+  border-radius:12px;padding:11px 14px;font-size:.86rem;margin-bottom:12px;display:flex;gap:10px;
+  align-items:flex-start}
+.otp-sent .tick{flex:0 0 auto;width:20px;height:20px;border-radius:50%;background:var(--brand);color:#fff;
+  display:grid;place-items:center;font-size:.72rem;font-weight:700}
+[data-theme="dark"] .otp-sent .tick{color:#06281a}
+.otp-sent b{display:block;margin-bottom:1px}

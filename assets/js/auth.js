@@ -40,7 +40,28 @@
   function now() { return Date.now(); }
   function fmt(m) { return "+91 " + m.slice(0, 5) + " " + m.slice(5); }
 
+  function toast(title, body, kind, ms) {
+    var wrap = document.querySelector(".toast-wrap");
+    if (!wrap) {
+      wrap = document.createElement("div");
+      wrap.className = "toast-wrap";
+      document.body.appendChild(wrap);
+    }
+    // keep the message clear of the sticky header (it can be two rows tall)
+    var header = document.querySelector("header.site");
+    if (header) wrap.style.top = Math.round(header.getBoundingClientRect().bottom + 12) + "px";
+    var el = document.createElement("div");
+    el.className = "toast " + (kind || "");
+    el.innerHTML = "<b>" + title + "</b>" + (body ? "<span>" + body + "</span>" : "") +
+      '<button class="close" type="button" aria-label="Close">×</button>';
+    wrap.appendChild(el);
+    var kill = function () { el.remove(); };
+    el.querySelector(".close").addEventListener("click", kill);
+    setTimeout(kill, ms || 6000);
+  }
+
   var AUTH = {
+    toast: toast,
     OTP_TTL_MS: OTP_TTL_MS,
     MAX_ATTEMPTS: MAX_ATTEMPTS,
 
@@ -191,6 +212,10 @@
                   (cooldown ? (window.KT ? KT.t("auth.resend_in") : "Resend in") + " " + cooldown + "s"
                             : (window.KT ? KT.t("auth.send") : "Send OTP")) + "</button>";
         } else {
+          html += '<div class="otp-sent"><span class="tick">✓</span><span><b>' +
+                  (window.KT ? KT.t("auth.sent_title") : "OTP sent") + " " + fmt(sent.mobile) + "</b>" +
+                  (window.KT ? KT.t("auth.sent_body") : "Valid for 5 minutes. Enter it below.") +
+                  "</span></div>";
           html += '<div class="demo-sms"><strong>' + (window.KT ? KT.t("auth.demo_sms") : "Simulated SMS") +
                   "</strong><br>" + fmt(sent.mobile) + " · " +
                   (window.KT ? KT.t("auth.demo_body") : "Your OTP is") + " <b class=\"otp-code\">" +
@@ -225,6 +250,9 @@
           if (!r.ok) return draw(r.error, "error");
           sent = r;
           draw("", "");
+          toast(window.KT ? KT.t("auth.sent_title") : "OTP sent",
+                fmt(r.mobile) + " · " + (window.KT ? KT.t("auth.sent_body") : "Valid for 5 minutes."),
+                "success");
           var box = host.querySelector("#otp-code");
           if (box) box.focus();
         });
@@ -234,12 +262,19 @@
           if (!r.ok) return draw(r.error, "error");
           sent = r;
           draw(window.KT ? KT.t("auth.resent") : "A new OTP has been generated. The previous one no longer works.", "success");
+          toast(window.KT ? KT.t("auth.resent_title") : "New OTP sent",
+                (window.KT ? KT.t("auth.resent") : "The previous code no longer works."), "success");
         });
 
         if (verifyBtn) verifyBtn.addEventListener("click", function () {
           var code = host.querySelector("#otp-code").value;
           var r = self.verifyOtp(mobile, code);
-          if (!r.ok) return draw(r.error, "error");
+          if (!r.ok) {
+            draw(r.error, "error");
+            toast(window.KT ? KT.t("auth.verify_failed") : "Could not verify",
+                  r.error, "error", 5000);
+            return;
+          }
           if (opts.onVerified) opts.onVerified(r);
         });
 
