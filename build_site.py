@@ -24,6 +24,28 @@ SEED = json.load(open(SEED_PATH, encoding="utf-8"))
 EXTRA = {
     "en": {
         "common.details": "Details",
+        "auth.title": "Verify your mobile number",
+        "auth.intro": "Enter your mobile number. We generate one one-time code, valid for 5 minutes, and it can be used once.",
+        "auth.mobile": "Mobile number",
+        "auth.send": "Send OTP",
+        "auth.resend": "Send a new OTP",
+        "auth.resend_in": "Resend in",
+        "auth.enter": "Enter the 6-digit OTP",
+        "auth.verify": "Verify and continue",
+        "auth.valid_for": "valid for",
+        "auth.minutes": "minutes",
+        "auth.expires_in": "Expires in",
+        "auth.resent": "A new OTP has been generated — the previous code no longer works.",
+        "auth.expired": "That OTP has expired. Request a new one.",
+        "auth.demo_sms": "Simulated SMS — demo build",
+        "auth.demo_body": "Your OTP is",
+        "auth.demo_note": "This is a demo build on a static host: no SMS is sent, so the code appears here instead of on your phone. Only one OTP is ever active, it expires after 5 minutes, and requesting a new one invalidates the old one. The server version texts the code and stores only a hash.",
+        "auth.gate_note": "Booking needs a verified mobile number — no password, just an OTP. Browsing stays open to everyone.",
+        "auth.signin": "Sign in",
+        "auth.signout": "Sign out",
+        "auth.account": "Your account",
+        "auth.verified": "Mobile verified",
+        "auth.account_title": "Sign in or register",
         "common.source": "Source",
         "common.district_est": "district estimated from coordinates",
         "common.no_ticket": "No ticket is required for this site. Timings and closures change — check locally before travelling.",
@@ -45,6 +67,28 @@ EXTRA = {
     },
     "hi": {
         "common.details": "विवरण",
+        "auth.title": "अपना मोबाइल नंबर सत्यापित करें",
+        "auth.intro": "अपना मोबाइल नंबर दर्ज करें। हम एक ओटीपी बनाते हैं, जो 5 मिनट तक मान्य रहता है और एक ही बार उपयोग हो सकता है।",
+        "auth.mobile": "मोबाइल नंबर",
+        "auth.send": "ओटीपी भेजें",
+        "auth.resend": "नया ओटीपी भेजें",
+        "auth.resend_in": "पुनः भेजें",
+        "auth.enter": "6 अंकों का ओटीपी दर्ज करें",
+        "auth.verify": "सत्यापित करें और आगे बढ़ें",
+        "auth.valid_for": "मान्य",
+        "auth.minutes": "मिनट",
+        "auth.expires_in": "समाप्त होने में",
+        "auth.resent": "नया ओटीपी बनाया गया — पिछला कोड अब काम नहीं करेगा।",
+        "auth.expired": "यह ओटीपी समाप्त हो गया है। नया ओटीपी माँगें।",
+        "auth.demo_sms": "सिम्युलेटेड एसएमएस — डेमो बिल्ड",
+        "auth.demo_body": "आपका ओटीपी है",
+        "auth.demo_note": "यह स्टैटिक होस्ट पर एक डेमो बिल्ड है: कोई एसएमएस नहीं भेजा जाता, इसलिए कोड यहाँ दिखाई देता है। एक समय में केवल एक ओटीपी सक्रिय रहता है, 5 मिनट में समाप्त होता है, और नया माँगने पर पुराना रद्द हो जाता है।",
+        "auth.gate_note": "बुकिंग के लिए सत्यापित मोबाइल नंबर आवश्यक है — कोई पासवर्ड नहीं, केवल ओटीपी। ब्राउज़ करना सभी के लिए खुला है।",
+        "auth.signin": "साइन इन",
+        "auth.signout": "साइन आउट",
+        "auth.account": "आपका खाता",
+        "auth.verified": "मोबाइल सत्यापित",
+        "auth.account_title": "साइन इन या पंजीकरण",
         "common.source": "स्रोत",
         "common.district_est": "जिला निर्देशांकों से अनुमानित",
         "common.no_ticket": "इस स्थल के लिए टिकट आवश्यक नहीं है। समय और बंद होने की तिथियाँ बदलती रहती हैं — यात्रा से पहले स्थानीय रूप से पुष्टि करें।",
@@ -66,6 +110,28 @@ EXTRA = {
     },
     "kn": {
         "common.details": "ವಿವರಗಳು",
+        "auth.title": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಪರಿಶೀಲಿಸಿ",
+        "auth.intro": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ. ನಾವು ಒಂದು ಒಟಿಪಿ ರಚಿಸುತ್ತೇವೆ, ಅದು 5 ನಿಮಿಷ ಮಾನ್ಯವಾಗಿರುತ್ತದೆ ಮತ್ತು ಒಮ್ಮೆ ಮಾತ್ರ ಬಳಸಬಹುದು.",
+        "auth.mobile": "ಮೊಬೈಲ್ ಸಂಖ್ಯೆ",
+        "auth.send": "ಒಟಿಪಿ ಕಳುಹಿಸಿ",
+        "auth.resend": "ಹೊಸ ಒಟಿಪಿ ಕಳುಹಿಸಿ",
+        "auth.resend_in": "ಮತ್ತೆ ಕಳುಹಿಸಲು",
+        "auth.enter": "6 ಅಂಕಿಯ ಒಟಿಪಿ ನಮೂದಿಸಿ",
+        "auth.verify": "ಪರಿಶೀಲಿಸಿ ಮುಂದುವರಿಸಿ",
+        "auth.valid_for": "ಮಾನ್ಯ",
+        "auth.minutes": "ನಿಮಿಷ",
+        "auth.expires_in": "ಮುಗಿಯಲು",
+        "auth.resent": "ಹೊಸ ಒಟಿಪಿ ರಚಿಸಲಾಗಿದೆ — ಹಳೆಯ ಕೋಡ್ ಇನ್ನು ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ.",
+        "auth.expired": "ಈ ಒಟಿಪಿ ಅವಧಿ ಮುಗಿದಿದೆ. ಹೊಸದನ್ನು ಕೇಳಿ.",
+        "auth.demo_sms": "ಸಿಮ್ಯುಲೇಟೆಡ್ SMS — ಡೆಮೊ ಬಿಲ್ಡ್",
+        "auth.demo_body": "ನಿಮ್ಮ ಒಟಿಪಿ",
+        "auth.demo_note": "ಇದು ಸ್ಟಾಟಿಕ್ ಹೋಸ್ಟ್‌ನಲ್ಲಿ ಡೆಮೊ ಬಿಲ್ಡ್: SMS ಕಳುಹಿಸುವುದಿಲ್ಲ, ಆದ್ದರಿಂದ ಕೋಡ್ ಇಲ್ಲಿ ಕಾಣುತ್ತದೆ. ಒಂದು ಸಮಯದಲ್ಲಿ ಒಂದೇ ಒಟಿಪಿ ಸಕ್ರಿಯ, 5 ನಿಮಿಷಗಳಲ್ಲಿ ಮುಗಿಯುತ್ತದೆ, ಹೊಸದನ್ನು ಕೇಳಿದರೆ ಹಳೆಯದು ರದ್ದಾಗುತ್ತದೆ.",
+        "auth.gate_note": "ಬುಕಿಂಗ್‌ಗೆ ಪರಿಶೀಲಿತ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಬೇಕು — ಪಾಸ್‌ವರ್ಡ್ ಇಲ್ಲ, ಒಟಿಪಿ ಮಾತ್ರ. ಬ್ರೌಸ್ ಮಾಡುವುದು ಎಲ್ಲರಿಗೂ ಮುಕ್ತ.",
+        "auth.signin": "ಸೈನ್ ಇನ್",
+        "auth.signout": "ಸೈನ್ ಔಟ್",
+        "auth.account": "ನಿಮ್ಮ ಖಾತೆ",
+        "auth.verified": "ಮೊಬೈಲ್ ಪರಿಶೀಲಿಸಲಾಗಿದೆ",
+        "auth.account_title": "ಸೈನ್ ಇನ್ ಅಥವಾ ನೋಂದಣಿ",
         "common.source": "ಮೂಲ",
         "common.district_est": "ಜಿಲ್ಲೆ ನಿರ್ದೇಶಾಂಕಗಳಿಂದ ಅಂದಾಜಿಸಲಾಗಿದೆ",
         "common.no_ticket": "ಈ ತಾಣಕ್ಕೆ ಟಿಕೆಟ್ ಅಗತ್ಯವಿಲ್ಲ. ಸಮಯ ಮತ್ತು ಮುಚ್ಚುವ ದಿನಗಳು ಬದಲಾಗುತ್ತವೆ — ಪ್ರಯಾಣಕ್ಕೆ ಮೊದಲು ಸ್ಥಳೀಯವಾಗಿ ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.",
@@ -208,6 +274,7 @@ def header(active):
         <option value="kn">ಕನ್ನಡ</option>
       </select>
       <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">☾</button>
+      <div id="auth-slot"></div>
     </div>
   </div>
 </header>""" % links
@@ -273,6 +340,7 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
 <script src="assets/js/data.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/content.js"></script>
+<script src="assets/js/auth.js"></script>
 %(scripts)s
 <script src="assets/js/app.js"></script>
 </body>
@@ -501,6 +569,14 @@ def build_pages():
 """
     page("bookings.html", "bookings", "my.title", bookings_body)
 
+    account = """
+<div class="section-head" style="margin-top:24px">
+  <h1 style="font-size:1.7rem" data-i18n="auth.account_title"></h1>
+</div>
+<div id="account" style="max-width:520px"></div>
+"""
+    page("account.html", "account", "auth.account_title", account)
+
     page("pay.html", "pay", "pay.title", '<div id="pay"></div>',
          title_fallback="Demo payment · Karnataka Tourism Portal")
     page("booking.html", "booking", "booking.summary", '<div id="booking"></div>',
@@ -538,6 +614,16 @@ def build_pages():
   a real reservation. A real homestay directory needs the state tourism department's registered list, which
   is not published in a machine-readable form; those listings can be dropped in without code changes once
   they are available.</p>
+
+  <h2>Signing in and booking</h2>
+  <p>Browsing is open to everyone. Booking a ticket or a stay needs a verified mobile number:
+  you enter your number, one one-time code is generated, and it is valid for five minutes.
+  Requesting a new code always produces a different one and cancels the previous code, so only
+  the newest OTP can ever be verified, and a code that has been used cannot be replayed.</p>
+  <p>On this static build there is no server and no SMS gateway, so the code is shown on screen
+  in a "simulated SMS" panel instead of being texted, and the verification state is kept in your
+  browser. The Flask version of this project sends the code by SMS, stores only a hash, and keeps
+  the verified session on the server — the rules are the same, the trust boundary is not.</p>
 
   <h2>Payments</h2>
   <p>Every payment screen is simulated. No payment gateway is connected, nothing you type is stored or sent

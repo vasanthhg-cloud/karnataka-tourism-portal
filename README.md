@@ -62,6 +62,22 @@ offline.
 
 ---
 
+## 2a. Signing in (mobile OTP)
+
+Browsing needs no account. **Booking does.** The flow:
+
+1. On a booking panel, or from *Sign in* in the header, enter your mobile number.
+2. One OTP is generated and shown in a **simulated SMS** panel — this build has no server and
+   no SMS gateway, so nothing is texted.
+3. The code is valid for **5 minutes**, one code at a time. Pressing *Send a new OTP* generates a
+   different code and the previous one stops working immediately; only the newest code verifies.
+4. Five wrong attempts burn the code; there is a 30-second resend cooldown.
+5. Once verified, the session is remembered in this browser, so an existing user goes straight to
+   the booking form — no re-registration.
+
+The rules match the server implementation in the Flask version of this project, where the code
+is texted by SMS, only a salted hash is stored, and the verified session lives on the server.
+
 ## 3. Honest labelling
 
 - **Demo payments.** No gateway is connected and no network request leaves the page when you "pay".

@@ -279,3 +279,12 @@ footer.site a:hover{color:var(--brand)}
   .detail-grid{gap:18px}
   .panel.sticky{position:static}
 }
+
+/* ---------- OTP verification ---------- */
+.otp-widget{max-width:440px}
+.demo-sms{background:var(--accent-soft);border:1px dashed var(--accent);border-radius:12px;
+  padding:12px 14px;font-size:.86rem;margin-bottom:14px;color:var(--text)}
+.demo-sms strong{display:block;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:4px}
+.otp-code{font-size:1.15rem;letter-spacing:.22em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+#auth-slot{display:flex;gap:6px;align-items:center}
