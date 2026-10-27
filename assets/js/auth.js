@@ -1,26 +1,27 @@
 /* Mobile + OTP sign-in for the Karnataka Tourism portal.
  *
- * The OTP is generated and verified by a small backend (see otp-service/), which
- * also sends the SMS. The browser never sees the code: it only posts the mobile
- * number, then the code the user typed.
+ * Two modes, chosen by assets/js/config.js:
  *
- * Set the service URL in assets/js/config.js:
- *     window.KT_OTP_API = "https://karnataka-otp.<your-subdomain>.workers.dev";
+ *   sms  — window.KT_OTP_API points at the OTP service (otp-service/), which
+ *          generates the code, texts it to the phone and verifies it. The browser
+ *          never sees the code. This is the production path.
  *
- * Rules enforced by the service, mirrored in the UI:
- *   - one active OTP per number, valid 5 minutes;
- *   - requesting a new OTP invalidates the previous one;
- *   - only the newest OTP verifies, once;
- *   - 5 wrong attempts burn the code; 30 s resend cooldown.
- *
- * Until KT_OTP_API is set, sign-in is switched off rather than faked.
+ *   demo — no service configured. The same rules run in the browser so the flow
+ *          can be demonstrated on a static host: one active OTP, 5-minute expiry,
+ *          resend rotates, only the newest verifies, 5 attempts. The code is shown
+ *          on screen in a panel clearly marked DEMO MODE, because there is no SMS
+ *          gateway to send it. This is not a security boundary.
  */
 (function () {
   "use strict";
 
   var KEY = "kt-auth";
   var SESSION_MS = 24 * 60 * 60 * 1000;
+  var OTP_TTL = 5 * 60 * 1000;
+  var COOLDOWN = 30 * 1000;
+  var MAX_ATTEMPTS = 5;
   var API = (window.KT_OTP_API || "").replace(/\/+$/, "");
+  var MODE = API ? "sms" : "demo";
 
   function load() {
     try {
@@ -34,9 +35,8 @@
   function validMobile(m) { return /^[6-9]\d{9}$/.test(m); }
   function fmt(m) { return "+91 " + m.slice(0, 5) + " " + m.slice(5); }
   function now() { return Date.now(); }
-  function tt(key, fallback) {
-    return window.KT ? KT.t(key) : fallback;
-  }
+  function tt(k, f) { return window.KT ? KT.t(k) : f; }
+  function mmss(s) { s = Math.max(0, s | 0); return Math.floor(s / 60) + ":" + ("0" + (s % 60)).slice(-2); }
 
   function toast(title, body, kind, ms) {
     var wrap = document.querySelector(".toast-wrap");
@@ -68,8 +68,52 @@
     });
   }
 
+  /* ------------------------------------------------------- demo-mode engine */
+  var DEMO = {
+    issue: function (mobile) {
+      var s = load();
+      var prev = s.demoOtp;
+      if (prev && prev.mobile === mobile && now() - prev.issuedAt < COOLDOWN) {
+        var wait = Math.ceil((COOLDOWN - (now() - prev.issuedAt)) / 1000);
+        return { ok: false, error: tt("auth.cooldown", "Please wait") + " " + wait + "s" };
+      }
+      var code = String(Math.floor(100000 + Math.random() * 900000));
+      // overwriting the single record is what makes the previous code invalid
+      s.demoOtp = { mobile: mobile, code: code, issuedAt: now(), expiresAt: now() + OTP_TTL, attempts: 0 };
+      if (!s.users[mobile]) s.users[mobile] = { verified: false, createdAt: now() };
+      save(s);
+      return { ok: true, mobile: mobile, code: code, demo: true, expires_in: OTP_TTL / 1000 };
+    },
+    check: function (mobile, code) {
+      var s = load();
+      var rec = s.demoOtp;
+      if (!rec || rec.mobile !== mobile) {
+        return { ok: false, error: tt("auth.no_active", "No active OTP for this number. Request a new one.") };
+      }
+      if (rec.expiresAt < now()) {
+        delete s.demoOtp; save(s);
+        return { ok: false, error: tt("auth.expired", "That OTP has expired. Request a new one.") };
+      }
+      if (rec.attempts >= MAX_ATTEMPTS) {
+        delete s.demoOtp; save(s);
+        return { ok: false, error: tt("auth.locked", "Too many wrong attempts. Request a new OTP.") };
+      }
+      if (String(code || "").trim() !== rec.code) {
+        rec.attempts += 1; s.demoOtp = rec; save(s);
+        var left = MAX_ATTEMPTS - rec.attempts;
+        return { ok: false, error: tt("auth.wrong", "Incorrect OTP.") + " " + left + " " + tt("auth.left", "attempts left") };
+      }
+      delete s.demoOtp;                         // single use
+      s.users[mobile] = { verified: true, verifiedAt: now() };
+      s.session = { mobile: mobile, token: "demo", verifiedAt: now(), expiresAt: now() + SESSION_MS };
+      save(s);
+      return { ok: true, mobile: mobile };
+    }
+  };
+
   var AUTH = {
-    configured: !!API,
+    mode: MODE,
+    configured: MODE === "sms",
     toast: toast,
 
     isVerified: function () {
@@ -79,41 +123,20 @@
       if (sess.expiresAt && sess.expiresAt < now()) return false;
       return true;
     },
-    currentMobile: function () {
-      var s = load();
-      return this.isVerified() ? s.session.mobile : null;
-    },
-    logout: function () {
-      var s = load();
-      delete s.session;
-      save(s);
-    },
+    currentMobile: function () { return this.isVerified() ? load().session.mobile : null; },
+    logout: function () { var s = load(); delete s.session; save(s); },
 
-    /* ------------------------------------------------------------- widget -- */
     widget: function (host, opts) {
       opts = opts || {};
       var self = this;
       var mobile = normalise(opts.mobile || "");
-      var state = "idle";       // idle | sending | sent | verifying
-      var expiresAt = 0;
-      var cooldownUntil = 0;
-      var timer = null;
+      var state = "idle";            // idle | sending | sent | verifying
+      var expiresAt = 0, cooldownUntil = 0, demoCode = null, timer = null;
 
       function stop() { if (timer) { clearInterval(timer); timer = null; } }
 
       function draw(message, kind) {
         stop();
-
-        if (!self.configured) {
-          host.innerHTML = '<div class="otp-widget">' +
-            '<h3>' + tt("auth.title", "Verify your mobile number") + "</h3>" +
-            '<div class="flash warning">' + tt("auth.not_configured",
-              "Mobile sign-in is not connected yet. The site owner needs to deploy the OTP service " +
-              "(otp-service/) and set its URL in assets/js/config.js. Until then, booking stays closed.") +
-            "</div></div>";
-          return;
-        }
-
         var sent = state === "sent" || state === "verifying";
         var left = sent ? Math.max(0, Math.ceil((expiresAt - now()) / 1000)) : 0;
         var cool = Math.max(0, Math.ceil((cooldownUntil - now()) / 1000));
@@ -136,6 +159,13 @@
           html += '<div class="otp-sent"><span class="tick">✓</span><span><b>' +
             tt("auth.sent_title", "OTP sent to") + " " + fmt(mobile) + "</b>" +
             tt("auth.sent_body", "Valid for 5 minutes. Enter it below.") + "</span></div>";
+
+          if (demoCode) {
+            html += '<div class="demo-sms"><strong>' + tt("auth.demo_mode", "Demo mode — no SMS gateway") +
+              '</strong><br>' + tt("auth.demo_body", "Your code is") +
+              ' <span class="otp-code">' + demoCode + "</span></div>";
+          }
+
           html += '<div class="field"><label>' + tt("auth.enter", "Enter the 6-digit OTP") +
             '</label><input id="otp-code" inputmode="numeric" maxlength="6" autocomplete="one-time-code" ' +
             'placeholder="000000"></div>';
@@ -151,7 +181,8 @@
         }
 
         if (message) html += '<div class="flash ' + (kind || "error") + '" style="margin-top:12px">' + message + "</div>";
-        html += '<p class="small muted" style="margin-top:12px">' + tt("auth.demo_note", "") + "</p></div>";
+        html += '<p class="small muted" style="margin-top:12px">' +
+          (MODE === "demo" ? tt("auth.demo_note_short", "") : tt("auth.demo_note", "")) + "</p></div>";
         host.innerHTML = html;
 
         var sendBtn = host.querySelector("#otp-send");
@@ -159,63 +190,78 @@
         var verifyBtn = host.querySelector("#otp-verify");
         var mobileInput = host.querySelector("#otp-mobile");
 
-        function requestOtp(isResend) {
+        function issue() {
           var m = normalise(mobileInput ? mobileInput.value : mobile);
           if (!validMobile(m)) return draw(tt("auth.err_mobile", "Enter a valid 10-digit Indian mobile number."), "error");
           mobile = m;
-          state = "sending";
-          draw("", "");
+          state = "sending"; draw("", "");
+
+          if (MODE === "demo") {
+            var r = DEMO.issue(m);
+            if (!r.ok) { state = "idle"; return draw(r.error, "error"); }
+            state = "sent"; demoCode = r.code;
+            expiresAt = now() + OTP_TTL; cooldownUntil = now() + COOLDOWN;
+            draw("", "");
+            toast(tt("auth.sent_title", "OTP sent to"), fmt(m), "success");
+            var b1 = host.querySelector("#otp-code"); if (b1) b1.focus();
+            return;
+          }
+
           post("/request", { mobile: m }).then(function (res) {
             var d = res.data || {};
             if (!res.status || res.status >= 400 || !d.ok) {
-              state = isResend && expiresAt > now() ? "sent" : "idle";
-              return draw(d.error || tt("auth.send_failed",
-                "We could not send the SMS just now. Please try again."), "error");
+              state = "idle";
+              return draw(d.error || tt("auth.send_failed", "We could not send the SMS just now."), "error");
             }
-            state = "sent";
-            expiresAt = now() + ((d.expires_in || 300) * 1000);
-            cooldownUntil = now() + 30000;
+            state = "sent"; expiresAt = now() + ((d.expires_in || 300) * 1000);
+            cooldownUntil = now() + COOLDOWN;
             draw("", "");
-            toast(tt("auth.sent_title", "OTP sent to"), fmt(m) + " · " +
-                  tt("auth.sent_body", "Valid for 5 minutes."), "success");
-            var box = host.querySelector("#otp-code");
-            if (box) box.focus();
+            toast(tt("auth.sent_title", "OTP sent to"), fmt(m) + " · " + tt("auth.sent_body", ""), "success");
+            var b2 = host.querySelector("#otp-code"); if (b2) b2.focus();
           }).catch(function () {
             state = "idle";
-            draw(tt("auth.network", "Could not reach the verification service. Check your connection and try again."), "error");
+            draw(tt("auth.network", "Could not reach the verification service."), "error");
           });
         }
 
-        if (sendBtn) sendBtn.addEventListener("click", function () { requestOtp(false); });
-        if (resendBtn) resendBtn.addEventListener("click", function () {
-          toast(tt("auth.resent_title", "New OTP requested"), tt("auth.resent", ""), "success");
-          requestOtp(true);
-        });
-
-        if (verifyBtn) verifyBtn.addEventListener("click", function () {
+        function verify() {
           var code = host.querySelector("#otp-code").value;
-          state = "verifying";
-          draw("", "");
-          post("/verify", { mobile: mobile, code: code }).then(function (res) {
-            var d = res.data || {};
-            if (!d.ok) {
+          state = "verifying"; draw("", "");
+
+          function done(r) {
+            if (!r.ok) {
               state = "sent";
-              draw(d.error || tt("auth.verify_failed", "Could not verify"), "error");
-              toast(tt("auth.verify_failed", "Could not verify"), d.error || "", "error", 5000);
+              draw(r.error || tt("auth.verify_failed", "Could not verify"), "error");
+              toast(tt("auth.verify_failed", "Could not verify"), r.error || "", "error", 5000);
               return;
             }
             var s = load();
-            s.users[mobile] = { verified: true, verifiedAt: now() };
-            s.session = { mobile: mobile, token: d.token, verifiedAt: now(),
-                          expiresAt: now() + ((d.expires_in || 86400) * 1000) };
-            save(s);
+            if (MODE === "sms") {
+              s.users[mobile] = { verified: true, verifiedAt: now() };
+              s.session = { mobile: mobile, token: r.token, verifiedAt: now(),
+                            expiresAt: now() + ((r.expires_in || 86400) * 1000) };
+              save(s);
+            }
             toast(tt("auth.verified_title", "Mobile verified"), fmt(mobile), "success");
             if (opts.onVerified) opts.onVerified({ mobile: mobile });
+          }
+
+          if (MODE === "demo") return done(DEMO.check(mobile, code));
+          post("/verify", { mobile: mobile, code: code }).then(function (res) {
+            done(res.data || { ok: false });
           }).catch(function () {
             state = "sent";
-            draw(tt("auth.network", "Could not reach the verification service. Check your connection and try again."), "error");
+            draw(tt("auth.network", "Could not reach the verification service."), "error");
           });
+        }
+
+        if (sendBtn) sendBtn.addEventListener("click", issue);
+        if (resendBtn) resendBtn.addEventListener("click", function () {
+          toast(tt("auth.resent_title", "New OTP requested"), tt("auth.resent", ""), "success");
+          demoCode = null;
+          issue();
         });
+        if (verifyBtn) verifyBtn.addEventListener("click", verify);
 
         var codeBox = host.querySelector("#otp-code");
         if (codeBox) codeBox.addEventListener("keydown", function (e) {
@@ -238,16 +284,10 @@
         }
       }
 
-      function mmss(s) {
-        s = Math.max(0, s | 0);
-        return Math.floor(s / 60) + ":" + ("0" + (s % 60)).slice(-2);
-      }
-
       draw("", "");
       return { redraw: draw };
     },
 
-    /* ------------------------------------------------------------- header -- */
     updateHeader: function () {
       var box = document.getElementById("auth-slot");
       if (!box) return;
@@ -256,8 +296,7 @@
         box.innerHTML = '<a class="btn sm ghost" href="account.html">' + fmt(m) + "</a>" +
           '<button class="btn sm ghost" type="button" id="sign-out">' + tt("auth.signout", "Sign out") + "</button>";
         box.querySelector("#sign-out").addEventListener("click", function () {
-          AUTH.logout();
-          location.reload();
+          AUTH.logout(); location.reload();
         });
       } else {
         box.innerHTML = '<a class="btn sm" href="account.html">' + tt("auth.signin", "Sign in") + "</a>";

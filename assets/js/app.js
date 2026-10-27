@@ -416,6 +416,7 @@
     if (d.bookable) html += bookingPanelHTML("destination", d);
     setHTML("#detail", html);
     if (d.bookable) wireBookingForm("destination", d);
+    mountGate();
   }
 
   /* ---------------------------------------------------------- homestay detail */
@@ -473,10 +474,50 @@
     html += bookingPanelHTML("homestay", h);
     setHTML("#detail", html);
     wireBookingForm("homestay", h);
+    mountGate();
+  }
+
+  function mountGate() {
+    var host = document.getElementById("book-gate");
+    if (host && window.KT_AUTH) {
+      KT_AUTH.widget(host, { onVerified: function () { render(); } });
+    }
+  }
+
+  /* ----------------------------------------------------------------- account */
+  function renderAccount() {
+    var host = $("#account");
+    if (!host) return;
+    if (window.KT_AUTH && KT_AUTH.isVerified()) {
+      var mobile = KT_AUTH.currentMobile();
+      host.innerHTML = '<div class="panel"><h3>' + t("auth.account") + "</h3>" +
+        '<dl class="dl"><dt>' + t("auth.mobile") + "</dt><dd>+91 " + esc(mobile) + "</dd>" +
+        '<dt>' + t("common.status") + '</dt><dd class="status confirmed">' + t("auth.verified") + "</dd>" +
+        '<dt>' + t("nav.bookings") + "</dt><dd>" + allBookings().length + "</dd></dl>" +
+        '<div class="row" style="margin-top:16px">' +
+        '<a class="btn" href="bookings.html">' + t("nav.bookings") + "</a>" +
+        '<a class="btn ghost" href="destinations.html">' + t("nav.destinations") + "</a>" +
+        '<button class="btn ghost" type="button" id="acct-signout">' + t("auth.signout") + "</button></div></div>";
+      $("#acct-signout").addEventListener("click", function () {
+        KT_AUTH.logout(); renderAccount(); KT_AUTH.updateHeader();
+      });
+    } else {
+      host.innerHTML = '<div class="panel" id="acct-widget"></div>';
+      KT_AUTH.widget($("#acct-widget"), {
+        onVerified: function () { renderAccount(); KT_AUTH.updateHeader(); }
+      });
+    }
   }
 
   /* ---------------------------------------------------------------- booking */
   function bookingPanelHTML(kind, item) {
+    // Booking needs a verified mobile; browsing stays open to everyone.
+    if (window.KT_AUTH && !KT_AUTH.isVerified()) {
+      return '<section class="block" id="book"><h2>' + t("booking.title") + "</h2>" +
+        '<div class="demo-banner">' + t("pay.banner") + "</div>" +
+        '<div class="panel"><div class="note" style="margin-bottom:14px">' + t("auth.gate_note") + "</div>" +
+        '<div id="book-gate"></div></div></section>';
+    }
     var today = todayISO();
     var rooms = kind === "homestay"
       ? '<div class="field"><label>' + t("common.rooms") + '</label><select name="room_type">' +
@@ -941,6 +982,7 @@
     else if (page === "booking") renderBooking();
     else if (page === "ticket") renderTicket();
     else if (page === "bookings") renderBookingsPage();
+    else if (page === "account") renderAccount();
   }
 
   function renderGuides() {
@@ -1045,6 +1087,7 @@
       });
     }
 
+    if (window.KT_AUTH) KT_AUTH.updateHeader();
     render();
   });
 

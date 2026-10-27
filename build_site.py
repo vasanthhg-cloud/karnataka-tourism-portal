@@ -37,6 +37,20 @@ EXTRA = {
         "auth.expires_in": "Expires in",
         "auth.resent": "A new OTP has been generated — the previous code no longer works.",
         "auth.expired": "That OTP has expired. Request a new one.",
+        "auth.account_title": "Sign in or register",
+        "auth.signin": "Sign in",
+        "auth.signout": "Sign out",
+        "auth.account": "Your account",
+        "auth.verified": "Mobile verified",
+        "auth.gate_note": "Booking needs a verified mobile number — no password, just an OTP. Browsing stays open to everyone.",
+        "auth.cooldown": "Please wait",
+        "auth.no_active": "No active OTP for this number. Request a new one.",
+        "auth.locked": "Too many wrong attempts. Request a new OTP.",
+        "auth.wrong": "Incorrect OTP.",
+        "auth.left": "attempts left",
+        "auth.demo_mode": "Demo mode — no SMS gateway connected",
+        "auth.demo_body": "Your code is",
+        "auth.demo_note_short": "Demo mode: this site has no server, so the code appears here instead of arriving by SMS. One code at a time, valid 5 minutes, and a new request cancels the old one. Set the OTP service URL in config.js to send real SMS.",
         "auth.sending": "Sending…",
         "auth.verifying": "Verifying…",
         "auth.verified_title": "Mobile verified",
@@ -91,6 +105,20 @@ EXTRA = {
         "auth.expires_in": "समाप्त होने में",
         "auth.resent": "नया ओटीपी बनाया गया — पिछला कोड अब काम नहीं करेगा।",
         "auth.expired": "यह ओटीपी समाप्त हो गया है। नया ओटीपी माँगें।",
+        "auth.account_title": "साइन इन या पंजीकरण",
+        "auth.signin": "साइन इन",
+        "auth.signout": "साइन आउट",
+        "auth.account": "आपका खाता",
+        "auth.verified": "मोबाइल सत्यापित",
+        "auth.gate_note": "बुकिंग के लिए सत्यापित मोबाइल नंबर आवश्यक है — कोई पासवर्ड नहीं, केवल ओटीपी। ब्राउज़ करना सभी के लिए खुला है।",
+        "auth.cooldown": "कृपया प्रतीक्षा करें",
+        "auth.no_active": "इस नंबर के लिए कोई सक्रिय ओटीपी नहीं। नया माँगें।",
+        "auth.locked": "बहुत अधिक गलत प्रयास। नया ओटीपी माँगें।",
+        "auth.wrong": "गलत ओटीपी।",
+        "auth.left": "प्रयास शेष",
+        "auth.demo_mode": "डेमो मोड — कोई एसएमएस गेटवे नहीं",
+        "auth.demo_body": "आपका कोड है",
+        "auth.demo_note_short": "डेमो मोड: इस साइट पर सर्वर नहीं है, इसलिए कोड एसएमएस से न आकर यहाँ दिखता है। एक समय में एक कोड, 5 मिनट मान्य, नया माँगने पर पुराना रद्द। असली एसएमएस के लिए config.js में सेवा URL सेट करें।",
         "auth.sending": "भेजा जा रहा है…",
         "auth.verifying": "सत्यापित हो रहा है…",
         "auth.verified_title": "मोबाइल सत्यापित",
@@ -145,6 +173,20 @@ EXTRA = {
         "auth.expires_in": "ಮುಗಿಯಲು",
         "auth.resent": "ಹೊಸ ಒಟಿಪಿ ರಚಿಸಲಾಗಿದೆ — ಹಳೆಯ ಕೋಡ್ ಇನ್ನು ಕೆಲಸ ಮಾಡುವುದಿಲ್ಲ.",
         "auth.expired": "ಈ ಒಟಿಪಿ ಅವಧಿ ಮುಗಿದಿದೆ. ಹೊಸದನ್ನು ಕೇಳಿ.",
+        "auth.account_title": "ಸೈನ್ ಇನ್ ಅಥವಾ ನೋಂದಣಿ",
+        "auth.signin": "ಸೈನ್ ಇನ್",
+        "auth.signout": "ಸೈನ್ ಔಟ್",
+        "auth.account": "ನಿಮ್ಮ ಖಾತೆ",
+        "auth.verified": "ಮೊಬೈಲ್ ಪರಿಶೀಲಿಸಲಾಗಿದೆ",
+        "auth.gate_note": "ಬುಕಿಂಗ್‌ಗೆ ಪರಿಶೀಲಿತ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಬೇಕು — ಪಾಸ್‌ವರ್ಡ್ ಇಲ್ಲ, ಒಟಿಪಿ ಮಾತ್ರ. ಬ್ರೌಸ್ ಮಾಡುವುದು ಎಲ್ಲರಿಗೂ ಮುಕ್ತ.",
+        "auth.cooldown": "ದಯವಿಟ್ಟು ಕಾಯಿರಿ",
+        "auth.no_active": "ಈ ಸಂಖ್ಯೆಗೆ ಸಕ್ರಿಯ ಒಟಿಪಿ ಇಲ್ಲ. ಹೊಸದನ್ನು ಕೇಳಿ.",
+        "auth.locked": "ಹೆಚ್ಚು ತಪ್ಪು ಪ್ರಯತ್ನಗಳು. ಹೊಸ ಒಟಿಪಿ ಕೇಳಿ.",
+        "auth.wrong": "ತಪ್ಪು ಒಟಿಪಿ.",
+        "auth.left": "ಪ್ರಯತ್ನಗಳು ಉಳಿದಿವೆ",
+        "auth.demo_mode": "ಡೆಮೊ ಮೋಡ್ — SMS ಗೇಟ್‌ವೇ ಇಲ್ಲ",
+        "auth.demo_body": "ನಿಮ್ಮ ಕೋಡ್",
+        "auth.demo_note_short": "ಡೆಮೊ ಮೋಡ್: ಈ ಸೈಟ್‌ನಲ್ಲಿ ಸರ್ವರ್ ಇಲ್ಲ, ಆದ್ದರಿಂದ ಕೋಡ್ SMS ಬದಲು ಇಲ್ಲಿ ಕಾಣುತ್ತದೆ. ಒಂದು ಸಮಯದಲ್ಲಿ ಒಂದು ಕೋಡ್, 5 ನಿಮಿಷ ಮಾನ್ಯ, ಹೊಸದನ್ನು ಕೇಳಿದರೆ ಹಳೆಯದು ರದ್ದು. ನಿಜವಾದ SMS ಗೆ config.js ನಲ್ಲಿ ಸೇವಾ URL ಹಾಕಿ.",
         "auth.sending": "ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ…",
         "auth.verifying": "ಪರಿಶೀಲಿಸಲಾಗುತ್ತಿದೆ…",
         "auth.verified_title": "ಮೊಬೈಲ್ ಪರಿಶೀಲಿಸಲಾಗಿದೆ",
@@ -307,6 +349,7 @@ def header(active):
         <option value="kn">ಕನ್ನಡ</option>
       </select>
       <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">☾</button>
+      <div id="auth-slot"></div>
     </div>
   </div>
 </header>""" % links
@@ -372,6 +415,8 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
 <script src="assets/js/data.js"></script>
 <script src="assets/js/i18n.js"></script>
 <script src="assets/js/content.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/auth.js"></script>
 %(scripts)s
 <script src="assets/js/app.js"></script>
 </body>
@@ -599,6 +644,14 @@ def build_pages():
 <div id="bookings"></div>
 """
     page("bookings.html", "bookings", "my.title", bookings_body)
+
+    account = """
+<div class="section-head" style="margin-top:24px">
+  <h1 style="font-size:1.7rem" data-i18n="auth.account_title"></h1>
+</div>
+<div id="account" style="max-width:520px"></div>
+"""
+    page("account.html", "account", "auth.account_title", account)
 
     page("pay.html", "pay", "pay.title", '<div id="pay"></div>',
          title_fallback="Demo payment · Karnataka Tourism Portal")

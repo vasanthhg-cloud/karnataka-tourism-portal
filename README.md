@@ -62,22 +62,48 @@ offline.
 
 ---
 
-## 2a. Booking (no account, no sign-in)
+## 2a. Signing in (mobile OTP)
 
-Browsing and booking are open to everyone — there is no sign-in button and no account.
-A booking needs only the name, email and phone typed into the form; the record is stored in
-your browser, and the demo ticket follows from there.
+Browsing is open to everyone. **Booking needs a verified mobile number** — no password, just a
+one-time code. *Sign in* sits in the header; a booking panel shows the same widget inline.
 
-Mobile OTP sign-in was built earlier and then removed at the owner's request. The code is kept
-in the repository so it can be switched back on without being rewritten:
+The flow: enter the number → one OTP is issued → enter it → booking unlocks, and the session is
+remembered in this browser.
 
-- `assets/js/auth.js` and `assets/js/config.js` — the browser side (currently not loaded by any page)
-- `otp-service/` — the Cloudflare Worker that sends the SMS and verifies the code
-- the Flask app in `karnataka-tourism.zip` — server-side OTP with the same rules
+Rules, the same in both modes: one active code per number, valid 5 minutes, resending generates a
+different code and kills the previous one, only the newest verifies, a code is single-use, five
+wrong attempts lock it, 30-second resend cooldown.
 
-To re-enable: add `<script src="assets/js/config.js"></script>` and
-`<script src="assets/js/auth.js"></script>` back before `app.js` in `build_site.py`, restore the
-gate in `bookingPanelHTML`, deploy the worker and set its URL in `config.js`.
+### Two modes
+
+`assets/js/config.js` decides which:
+
+- **demo** (default, `KT_OTP_API` empty) — no server, so the same rules run in the browser and the
+  code is shown in a panel marked *DEMO MODE — no SMS gateway connected*. The flow is real, the
+  security is not: anyone can read the code or set the local session flag. Fine for a prototype,
+  not for real accounts.
+- **sms** (`KT_OTP_API` set) — the OTP service in `otp-service/` generates the code, texts it, and
+  verifies it server-side; the browser never sees it. This is the production path.
+
+### Turning on real SMS
+
+```bash
+cd otp-service
+npm install -g wrangler && wrangler login
+wrangler kv namespace create OTP_KV     # paste the id into wrangler.toml
+wrangler secret put OTP_SECRET
+wrangler secret put MSG91_AUTH_KEY     # or FAST2SMS_API_KEY / TWILIO_*
+wrangler deploy
+```
+
+then set the printed URL:
+
+```js
+// assets/js/config.js
+window.KT_OTP_API = "https://karnataka-otp.<your-subdomain>.workers.dev";
+```
+
+Indian transactional SMS needs DLT registration with your provider, in your name.
 
 ## 3. Honest labelling
 
