@@ -64,19 +64,40 @@ offline.
 
 ## 2a. Signing in (mobile OTP)
 
-Browsing needs no account. **Booking does.** The flow:
+Browsing needs no account. **Booking does.** The site never displays an OTP: the code is
+generated and texted by a small backend in `otp-service/`, and only the code you type is
+sent back for verification.
 
-1. On a booking panel, or from *Sign in* in the header, enter your mobile number.
-2. One OTP is generated and shown in a **simulated SMS** panel — this build has no server and
-   no SMS gateway, so nothing is texted.
-3. The code is valid for **5 minutes**, one code at a time. Pressing *Send a new OTP* generates a
-   different code and the previous one stops working immediately; only the newest code verifies.
-4. Five wrong attempts burn the code; there is a 30-second resend cooldown.
-5. Once verified, the session is remembered in this browser, so an existing user goes straight to
-   the booking form — no re-registration.
+1. Enter your mobile number (on a booking panel, or from *Sign in*).
+2. The service generates one OTP, texts it to that number and stores only a hash.
+3. The code is valid for **5 minutes**. Requesting a new one generates a different code and
+   cancels the previous one, so only the newest OTP verifies, and a used code cannot be replayed.
+4. Five wrong attempts burn the code; 30-second resend cooldown, 5 requests per number per hour.
+5. Once verified, the signed session is kept in the browser, so you go straight to the booking
+   form next time — no re-registration.
 
-The rules match the server implementation in the Flask version of this project, where the code
-is texted by SMS, only a salted hash is stored, and the verified session lives on the server.
+### Turning it on
+
+Sign-in stays switched off until the service is deployed — the site will not invent a code:
+
+```bash
+cd otp-service
+npm install -g wrangler && wrangler login
+wrangler kv namespace create OTP_KV        # put the id in wrangler.toml
+wrangler secret put OTP_SECRET
+wrangler secret put MSG91_AUTH_KEY         # or FAST2SMS_API_KEY / TWILIO_*
+wrangler deploy
+```
+
+Then set the URL it prints in `assets/js/config.js`:
+
+```js
+window.KT_OTP_API = "https://karnataka-otp.<your-subdomain>.workers.dev";
+```
+
+Indian transactional SMS requires DLT registration (entity + template) with your provider;
+that is done in your name on your account. See `otp-service/README.md` for the provider
+variables and the 13 local tests.
 
 ## 3. Honest labelling
 
