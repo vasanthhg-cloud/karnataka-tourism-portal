@@ -309,3 +309,9 @@ footer.site a:hover{color:var(--brand)}
   display:grid;place-items:center;font-size:.72rem;font-weight:700}
 [data-theme="dark"] .otp-sent .tick{color:#06281a}
 .otp-sent b{display:block;margin-bottom:1px}
+
+/* ---------- sign-in links + credential form ---------- */
+.auth-links{display:flex;flex-direction:column;gap:6px;margin-top:14px}
+.auth-links a{font-size:.85rem;color:var(--brand);font-weight:600}
+.auth-links a:hover{text-decoration:underline}
+.otp-widget input[type=password]{letter-spacing:.12em}

@@ -62,48 +62,30 @@ offline.
 
 ---
 
-## 2a. Signing in (mobile OTP)
+## 2a. Signing in
 
-Browsing is open to everyone. **Booking needs a verified mobile number** — no password, just a
-one-time code. *Sign in* sits in the header; a booking panel shows the same widget inline.
+Browsing is open to everyone. **Booking needs an account.** *Sign in* sits in the header; a booking
+panel shows the same form inline.
 
-The flow: enter the number → one OTP is issued → enter it → booking unlocks, and the session is
-remembered in this browser.
+Two ways to sign in, both from the same panel:
 
-Rules, the same in both modes: one active code per number, valid 5 minutes, resending generates a
-different code and kills the previous one, only the newest verifies, a code is single-use, five
-wrong attempts lock it, 30-second resend cooldown.
+- **Mobile number + password** (default). Creating an account asks for your name, mobile number and
+  a password of at least 6 characters. The password is stored as a salted SHA-256 hash — never in
+  clear — and the account is keyed on the normalised 10-digit number, so `+91`, a leading `0` or
+  spaces all resolve to the same account.
+- **Mobile number + OTP** via the *Use an OTP instead* link: one code at a time, valid 5 minutes,
+  resending generates a different code and cancels the previous one, only the newest verifies,
+  single use, five wrong attempts lock it, 30-second cooldown.
 
-### Two modes
+After either path the header shows your name, booking unlocks, and the session lasts 24 hours.
 
-`assets/js/config.js` decides which:
+### Where the accounts live
 
-- **demo** (default, `KT_OTP_API` empty) — no server, so the same rules run in the browser and the
-  code is shown in a panel marked *DEMO MODE — no SMS gateway connected*. The flow is real, the
-  security is not: anyone can read the code or set the local session flag. Fine for a prototype,
-  not for real accounts.
-- **sms** (`KT_OTP_API` set) — the OTP service in `otp-service/` generates the code, texts it, and
-  verifies it server-side; the browser never sees it. This is the production path.
-
-### Turning on real SMS
-
-```bash
-cd otp-service
-npm install -g wrangler && wrangler login
-wrangler kv namespace create OTP_KV     # paste the id into wrangler.toml
-wrangler secret put OTP_SECRET
-wrangler secret put MSG91_AUTH_KEY     # or FAST2SMS_API_KEY / TWILIO_*
-wrangler deploy
-```
-
-then set the printed URL:
-
-```js
-// assets/js/config.js
-window.KT_OTP_API = "https://karnataka-otp.<your-subdomain>.workers.dev";
-```
-
-Indian transactional SMS needs DLT registration with your provider, in your name.
+This is a static site, so accounts and sessions are stored in your browser (`localStorage`). That
+makes the flow real but the trust model local: someone with access to the browser can read or alter
+it. For real accounts, deploy the OTP service in `otp-service/` and set `window.KT_OTP_API` in
+`assets/js/config.js` — the OTP path then runs server-side with SMS, and the Flask project in
+`karnataka-tourism.zip` has the full server-side version with hashed passwords and server sessions.
 
 ## 3. Honest labelling
 

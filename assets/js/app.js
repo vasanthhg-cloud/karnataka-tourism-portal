@@ -480,7 +480,7 @@
   function mountGate() {
     var host = document.getElementById("book-gate");
     if (host && window.KT_AUTH) {
-      KT_AUTH.widget(host, { onVerified: function () { render(); } });
+      KT_AUTH.widget(host, { onVerified: function () { KT_AUTH.updateHeader(); render(); } });
     }
   }
 
@@ -490,8 +490,11 @@
     if (!host) return;
     if (window.KT_AUTH && KT_AUTH.isVerified()) {
       var mobile = KT_AUTH.currentMobile();
+      var nm = KT_AUTH.currentName();
       host.innerHTML = '<div class="panel"><h3>' + t("auth.account") + "</h3>" +
-        '<dl class="dl"><dt>' + t("auth.mobile") + "</dt><dd>+91 " + esc(mobile) + "</dd>" +
+        '<dl class="dl">' +
+        (nm ? '<dt>' + t("auth.name") + "</dt><dd>" + esc(nm) + "</dd>" : "") +
+        '<dt>' + t("auth.mobile") + "</dt><dd>+91 " + esc(mobile) + "</dd>" +
         '<dt>' + t("common.status") + '</dt><dd class="status confirmed">' + t("auth.verified") + "</dd>" +
         '<dt>' + t("nav.bookings") + "</dt><dd>" + allBookings().length + "</dd></dl>" +
         '<div class="row" style="margin-top:16px">' +
