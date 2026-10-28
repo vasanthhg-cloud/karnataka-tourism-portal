@@ -488,15 +488,13 @@
   function renderLogin() {
     var host = $("#login-widget");
     if (!host || !window.KT_AUTH) return;
-    if (KT_AUTH.isVerified()) {
-      var who = KT_AUTH.currentName() || (KT_AUTH.currentId() || {}).value || "";
-      host.innerHTML = '<div class="auth-alert success" role="status">You are signed in as <strong>' +
-        esc(who) + '</strong>.</div>' +
-        '<a class="btn block" href="account.html">Go to your account</a>';
-      return;
-    }
+    // already signed in? no reason to show the form — go straight home
+    if (KT_AUTH.isVerified()) { location.replace("index.html"); return; }
     KT_AUTH.widget(host, {
-      onVerified: function () { KT_AUTH.updateHeader(); location.href = "account.html"; }
+      onVerified: function () {
+        KT_AUTH.updateHeader();
+        location.href = "index.html";        // login complete -> home page
+      }
     });
   }
 
