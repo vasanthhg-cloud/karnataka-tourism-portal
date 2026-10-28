@@ -64,28 +64,23 @@ offline.
 
 ## 2a. Signing in
 
-Browsing is open to everyone. **Booking needs an account.** *Sign in* sits in the header; a booking
-panel shows the same form inline.
+Browsing is open to everyone. **Booking needs an account.** `login.html` is the split-screen sign-in
+page — blue Karnataka panel on the left, form on the right — and the same form appears inline when
+you try to book.
 
-Two ways to sign in, both from the same panel:
+- **Email address or mobile number + password.** One field accepts either; accounts are keyed on
+  the normalised value, so `+91`, a leading zero or spaces all reach the same mobile account, and
+  emails are lower-cased. Passwords are salted and hashed with SHA-256 (WebCrypto), never stored in
+  clear. Minimum 6 characters.
+- **Or a one-time code** via *Use an OTP instead*: one code at a time, 5 minutes, resend rotates,
+  only the newest verifies, five wrong attempts lock it.
+- Signed in, the header shows your name, `account.html` shows your profile and bookings, and the
+  session lasts 24 hours.
 
-- **Mobile number + password** (default). Creating an account asks for your name, mobile number and
-  a password of at least 6 characters. The password is stored as a salted SHA-256 hash — never in
-  clear — and the account is keyed on the normalised 10-digit number, so `+91`, a leading `0` or
-  spaces all resolve to the same account.
-- **Mobile number + OTP** via the *Use an OTP instead* link: one code at a time, valid 5 minutes,
-  resending generates a different code and cancels the previous one, only the newest verifies,
-  single use, five wrong attempts lock it, 30-second cooldown.
-
-After either path the header shows your name, booking unlocks, and the session lasts 24 hours.
-
-### Where the accounts live
-
-This is a static site, so accounts and sessions are stored in your browser (`localStorage`). That
-makes the flow real but the trust model local: someone with access to the browser can read or alter
-it. For real accounts, deploy the OTP service in `otp-service/` and set `window.KT_OTP_API` in
-`assets/js/config.js` — the OTP path then runs server-side with SMS, and the Flask project in
-`karnataka-tourism.zip` has the full server-side version with hashed passwords and server sessions.
+Accounts live in this browser (`localStorage`) because the site is static — the flow is real, the
+trust model is local. For server-side accounts use the Flask project in `karnataka-tourism.zip`
+(email + password against hashed rows, HTTP-only session, password reset) or deploy
+`otp-service/` and set `window.KT_OTP_API` in `assets/js/config.js` for server-verified OTP.
 
 ## 3. Honest labelling
 

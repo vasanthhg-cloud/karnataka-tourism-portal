@@ -484,17 +484,41 @@
     }
   }
 
+  /* ------------------------------------------------------------------- login */
+  function renderLogin() {
+    var host = $("#login-widget");
+    if (!host || !window.KT_AUTH) return;
+    if (KT_AUTH.isVerified()) {
+      var who = KT_AUTH.currentName() || (KT_AUTH.currentId() || {}).value || "";
+      host.innerHTML = '<div class="auth-alert success" role="status">You are signed in as <strong>' +
+        esc(who) + '</strong>.</div>' +
+        '<a class="btn block" href="account.html">Go to your account</a>';
+      return;
+    }
+    KT_AUTH.widget(host, {
+      onVerified: function () { KT_AUTH.updateHeader(); location.href = "account.html"; }
+    });
+  }
+
   /* ----------------------------------------------------------------- account */
   function renderAccount() {
     var host = $("#account");
     if (!host) return;
+    if (!(window.KT_AUTH && KT_AUTH.isVerified())) {
+      host.innerHTML = '<div class="panel"><p class="muted">' + t("auth.signin_prompt",
+        "Sign in to see your account and bookings.") + '</p>' +
+        '<a class="btn" href="login.html">' + t("auth.signin") + "</a></div>";
+      return;
+    }
     if (window.KT_AUTH && KT_AUTH.isVerified()) {
-      var mobile = KT_AUTH.currentMobile();
+      var id = KT_AUTH.currentId() || { value: "", kind: "mobile" };
       var nm = KT_AUTH.currentName();
+      var idLabel = id.kind === "email" ? t("auth.email", "Email address") : t("auth.mobile");
+      var idValue = id.kind === "email" ? id.value : "+91 " + esc(id.value);
       host.innerHTML = '<div class="panel"><h3>' + t("auth.account") + "</h3>" +
         '<dl class="dl">' +
         (nm ? '<dt>' + t("auth.name") + "</dt><dd>" + esc(nm) + "</dd>" : "") +
-        '<dt>' + t("auth.mobile") + "</dt><dd>+91 " + esc(mobile) + "</dd>" +
+        '<dt>' + idLabel + "</dt><dd>" + idValue + "</dd>" +
         '<dt>' + t("common.status") + '</dt><dd class="status confirmed">' + t("auth.verified") + "</dd>" +
         '<dt>' + t("nav.bookings") + "</dt><dd>" + allBookings().length + "</dd></dl>" +
         '<div class="row" style="margin-top:16px">' +
@@ -986,6 +1010,7 @@
     else if (page === "ticket") renderTicket();
     else if (page === "bookings") renderBookingsPage();
     else if (page === "account") renderAccount();
+    else if (page === "login") renderLogin();
   }
 
   function renderGuides() {

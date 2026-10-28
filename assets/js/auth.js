@@ -32,6 +32,16 @@
   function save(s) { localStorage.setItem(KEY, JSON.stringify(s)); }
   function normalise(m) { return String(m || "").replace(/\D/g, "").replace(/^91(?=\d{10}$)/, "").slice(-10); }
   function validMobile(m) { return /^[6-9]\d{9}$/.test(m); }
+  function isEmail(v) { return /^[^@\s]+@[^@\s]+\.[a-zA-Z]{2,}$/.test(String(v || "").trim()); }
+  /** An account can be identified by email address or by mobile number. */
+  function identify(raw) {
+    var v = String(raw || "").trim();
+    if (isEmail(v)) return { key: "email:" + v.toLowerCase(), kind: "email", value: v.toLowerCase() };
+    var m = normalise(v);
+    if (validMobile(m)) return { key: "mobile:" + m, kind: "mobile", value: m };
+    return null;
+  }
+  function show(v) { return isEmail(v) ? v : fmt(v); }
   function fmt(m) { return "+91 " + m.slice(0, 5) + " " + m.slice(5); }
   function now() { return Date.now(); }
   function tt(k, f) {
@@ -89,14 +99,18 @@
   }
 
   /* --------------------------------------------------------------- state */
-  function setSession(mobile, extra) {
+  function setSession(key, extra) {
     var s = load();
-    var u = s.users[mobile] || {};
+    var u = s.users[key] || {};
     u.verified = true;
     u.verifiedAt = now();
     if (extra && extra.name) u.name = extra.name;
-    s.users[mobile] = u;
-    s.session = { mobile: mobile, token: "local", name: u.name || "",
+    if (extra && extra.value) u.value = extra.value;
+    if (extra && extra.kind) u.kind = extra.kind;
+    s.users[key] = u;
+    s.session = { key: key, token: "local", name: u.name || "",
+                  value: u.value || key.replace(/^(email|mobile):/, ""),
+                  kind: u.kind || "mobile",
                   verifiedAt: now(), expiresAt: now() + SESSION_MS };
     save(s);
     return s.session;
@@ -110,53 +124,66 @@
 
     isVerified: function () {
       var s = load(), sess = s.session;
-      return !!(sess && sess.mobile && sess.token && (!sess.expiresAt || sess.expiresAt > now()));
+      return !!(sess && sess.token && (sess.key || sess.mobile) && (!sess.expiresAt || sess.expiresAt > now()));
     },
-    currentMobile: function () { return this.isVerified() ? load().session.mobile : null; },
+    currentMobile: function () {
+      if (!this.isVerified()) return null;
+      var sess = load().session;
+      return sess.kind === "mobile" ? sess.value : null;
+    },
+    currentId: function () {
+      if (!this.isVerified()) return null;
+      var sess = load().session;
+      return { value: sess.value || "", kind: sess.kind || "mobile" };
+    },
     currentName: function () {
       var s = load();
       return this.isVerified() ? (s.session.name || (s.users[s.session.mobile] || {}).name || "") : "";
     },
-    hasAccount: function (mobile) { return !!(load().users[normalise(mobile)] || {}).passHash; },
+    hasAccount: function (identifier) {
+      var id = identify(identifier);
+      return !!(id && (load().users[id.key] || {}).passHash);
+    },
     logout: function () { var s = load(); delete s.session; save(s); },
 
     /* --------------------------------------------------------- credentials */
-    signUp: function (name, mobileRaw, password) {
-      var mobile = normalise(mobileRaw);
+    signUp: function (name, identifier, password) {
+      var id = identify(identifier);
       if (!name || name.trim().length < 2) return Promise.resolve({ ok: false, error: tt("auth.err_name", "Please enter your name.") });
-      if (!validMobile(mobile)) return Promise.resolve({ ok: false, error: tt("auth.err_mobile", "Enter a valid 10-digit Indian mobile number.") });
+      if (!id) return Promise.resolve({ ok: false, error: tt("auth.err_identifier", "Enter a valid email address or 10-digit mobile number.") });
       if (!password || password.length < MIN_PASSWORD) {
         return Promise.resolve({ ok: false, error: tt("auth.err_password", "Use at least 6 characters for the password.") });
       }
       var s = load();
-      var existing = s.users[mobile];
+      var existing = s.users[id.key];
       if (existing && existing.passHash) {
-        return Promise.resolve({ ok: false, error: tt("auth.err_exists", "An account already exists for this number. Please sign in.") });
+        return Promise.resolve({ ok: false, error: tt("auth.err_exists", "An account already exists for this address. Please sign in.") });
       }
       var salt = randomSalt();
       return hashPassword(password, salt).then(function (hash) {
         var st = load();
-        st.users[mobile] = { name: name.trim(), salt: salt, passHash: hash, verified: true,
-                             createdAt: (st.users[mobile] || {}).createdAt || now() };
+        st.users[id.key] = { name: name.trim(), salt: salt, passHash: hash, verified: true,
+                             kind: id.kind, value: id.value,
+                             createdAt: (st.users[id.key] || {}).createdAt || now() };
         save(st);
-        setSession(mobile, { name: name.trim() });
-        return { ok: true, mobile: mobile, name: name.trim() };
+        setSession(id.key, { name: name.trim(), value: id.value, kind: id.kind });
+        return { ok: true, mobile: id.value, name: name.trim() };
       });
     },
 
-    signIn: function (mobileRaw, password) {
-      var mobile = normalise(mobileRaw);
-      if (!validMobile(mobile)) return Promise.resolve({ ok: false, error: tt("auth.err_mobile", "Enter a valid 10-digit Indian mobile number.") });
-      var u = load().users[mobile];
+    signIn: function (identifier, password) {
+      var id = identify(identifier);
+      if (!id) return Promise.resolve({ ok: false, error: tt("auth.err_identifier", "Enter a valid email address or 10-digit mobile number.") });
+      var u = load().users[id.key];
       if (!u || !u.passHash) {
-        return Promise.resolve({ ok: false, error: tt("auth.err_no_account", "No account for this number yet — create one."), needsSignup: true });
+        return Promise.resolve({ ok: false, error: tt("auth.err_no_account", "No account for this address yet — create one."), needsSignup: true });
       }
       return hashPassword(password || "", u.salt).then(function (hash) {
         if (hash !== u.passHash) {
-          return { ok: false, error: tt("auth.err_wrong_password", "That password does not match this number.") };
+          return { ok: false, error: tt("auth.err_wrong_password", "That password does not match this account.") };
         }
-        setSession(mobile, { name: u.name });
-        return { ok: true, mobile: mobile, name: u.name || "" };
+        setSession(id.key, { name: u.name, value: id.value, kind: id.kind });
+        return { ok: true, mobile: id.value, name: u.name || "" };
       });
     },
 
@@ -219,11 +246,9 @@
             html += '<div class="field"><label>' + tt("auth.name", "Your name") +
               '</label><input id="au-name" autocomplete="name" value="' + esc(form.name) + '"></div>';
           }
-          html += '<div class="field"><label>' + tt("auth.mobile", "Mobile number") +
-            '</label><div class="row" style="gap:8px;flex-wrap:nowrap">' +
-            '<span class="pill" style="flex:0 0 auto">+91</span>' +
-            '<input id="au-mobile" inputmode="numeric" maxlength="10" autocomplete="tel" placeholder="98765 43210" value="' +
-            esc(form.mobile) + '"></div></div>';
+          html += '<div class="field"><label>' + tt("auth.identifier", "Email address or mobile number") +
+            '</label><input id="au-mobile" autocomplete="username" placeholder="you@example.com or 98765 43210" value="' +
+            esc(form.mobile) + '"></div>';
           html += '<div class="field"><label>' + tt("auth.password", "Password") +
             '</label><input id="au-password" type="password" autocomplete="' + (signup ? "new-password" : "current-password") +
             '" placeholder="••••••••"></div>';
@@ -302,12 +327,12 @@
             var name = (root.querySelector("#au-name") || {}).value || "";
             form.name = name;
             form.mobile = root.querySelector("#au-mobile").value;
-            mobile = normalise(form.mobile);
             var password = root.querySelector("#au-password").value;
             busy = true;
             submit.disabled = true;
             submit.textContent = tt("auth.working", "Please wait…");
-            var p = view === "signup" ? self.signUp(name, mobile, password) : self.signIn(mobile, password);
+            var p = view === "signup" ? self.signUp(name, form.mobile, password)
+                                      : self.signIn(form.mobile, password);
             p.then(function (r) {
               busy = false;
               if (!r.ok) {
@@ -315,7 +340,7 @@
                 return say(r.error, "error");
               }
               message = null;
-              toast(tt("auth.welcome", "Signed in"), fmt(r.mobile) + (r.name ? " · " + r.name : ""), "success");
+              toast(tt("auth.welcome", "Signed in"), (r.mobile ? show(r.mobile) : "") + (r.name ? " · " + r.name : ""), "success");
               if (opts.onVerified) opts.onVerified(r);
             }).catch(function () { busy = false; say(tt("auth.err_generic", "Something went wrong. Please try again."), "error"); });
           });

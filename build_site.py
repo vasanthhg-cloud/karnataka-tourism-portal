@@ -41,7 +41,11 @@ EXTRA = {
         "auth.signin_title": "Sign in",
         "auth.create_title": "Create your account",
         "auth.create_account": "Create account",
-        "auth.cred_intro": "Sign in with your mobile number and password.",
+        "auth.cred_intro": "Sign in with your email address or mobile number and password.",
+        "auth.identifier": "Email address or mobile number",
+        "auth.email": "Email address",
+        "auth.signin_prompt": "Sign in to see your account and bookings.",
+        "auth.err_identifier": "Enter a valid email address or 10-digit mobile number.",
         "auth.password": "Password",
         "auth.password_rule": "At least 6 characters.",
         "auth.err_name": "Please enter your name.",
@@ -92,7 +96,11 @@ EXTRA = {
         "auth.signin_title": "Sign in",
         "auth.create_title": "Create your account",
         "auth.create_account": "Create account",
-        "auth.cred_intro": "Sign in with your mobile number and password.",
+        "auth.cred_intro": "Sign in with your email address or mobile number and password.",
+        "auth.identifier": "Email address or mobile number",
+        "auth.email": "Email address",
+        "auth.signin_prompt": "Sign in to see your account and bookings.",
+        "auth.err_identifier": "Enter a valid email address or 10-digit mobile number.",
         "auth.password": "Password",
         "auth.password_rule": "At least 6 characters.",
         "auth.err_name": "Please enter your name.",
@@ -145,7 +153,11 @@ EXTRA = {
         "auth.signin_title": "साइन इन",
         "auth.create_title": "अपना खाता बनाएँ",
         "auth.create_account": "खाता बनाएँ",
-        "auth.cred_intro": "अपने मोबाइल नंबर और पासवर्ड से साइन इन करें।",
+        "auth.cred_intro": "अपने ईमेल पता या मोबाइल नंबर और पासवर्ड से साइन इन करें।",
+        "auth.identifier": "ईमेल पता या मोबाइल नंबर",
+        "auth.email": "ईमेल पता",
+        "auth.signin_prompt": "अपना खाता और बुकिंग देखने के लिए साइन इन करें।",
+        "auth.err_identifier": "मान्य ईमेल पता या 10 अंकों का मोबाइल नंबर दर्ज करें।",
         "auth.password": "पासवर्ड",
         "auth.password_rule": "कम से कम 6 अक्षर।",
         "auth.err_name": "कृपया अपना नाम दर्ज करें।",
@@ -196,7 +208,11 @@ EXTRA = {
         "auth.signin_title": "साइन इन",
         "auth.create_title": "अपना खाता बनाएँ",
         "auth.create_account": "खाता बनाएँ",
-        "auth.cred_intro": "अपने मोबाइल नंबर और पासवर्ड से साइन इन करें।",
+        "auth.cred_intro": "अपने ईमेल पता या मोबाइल नंबर और पासवर्ड से साइन इन करें।",
+        "auth.identifier": "ईमेल पता या मोबाइल नंबर",
+        "auth.email": "ईमेल पता",
+        "auth.signin_prompt": "अपना खाता और बुकिंग देखने के लिए साइन इन करें।",
+        "auth.err_identifier": "मान्य ईमेल पता या 10 अंकों का मोबाइल नंबर दर्ज करें।",
         "auth.password": "पासवर्ड",
         "auth.password_rule": "कम से कम 6 अक्षर।",
         "auth.err_name": "कृपया अपना नाम दर्ज करें।",
@@ -249,8 +265,12 @@ EXTRA = {
         "auth.signin_title": "ಸೈನ್ ಇನ್",
         "auth.create_title": "ನಿಮ್ಮ ಖಾತೆ ರಚಿಸಿ",
         "auth.create_account": "ಖಾತೆ ರಚಿಸಿ",
-        "auth.cred_intro": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನಿಂದ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
-        "auth.password": "ಪಾಸ್‌ವರ್ಡ್",
+        "auth.cred_intro": "ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸ ಅಥವಾ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನಿಂದ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
+        "auth.identifier": "ಇಮೇಲ್ ವಿಳಾಸ ಅಥವಾ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ",
+        "auth.email": "ಇಮೇಲ್ ವಿಳಾಸ",
+        "auth.signin_prompt": "ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ಬುಕಿಂಗ್‌ಗಳನ್ನು ನೋಡಲು ಸೈನ್ ಇನ್ ಮಾಡಿ.",
+        "auth.err_identifier": "ಸರಿಯಾದ ಇಮೇಲ್ ವಿಳಾಸ ಅಥವಾ 10 ಅಂಕಿಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.",
+        "auth.password": "ಪಾಸ್ವರ್ಡ್",
         "auth.password_rule": "ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳು.",
         "auth.err_name": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಹೆಸರು ನಮೂದಿಸಿ.",
         "auth.err_password": "ಪಾಸ್‌ವರ್ಡ್ ಕನಿಷ್ಠ 6 ಅಕ್ಷರ ಇರಬೇಕು.",
@@ -300,8 +320,12 @@ EXTRA = {
         "auth.signin_title": "ಸೈನ್ ಇನ್",
         "auth.create_title": "ನಿಮ್ಮ ಖಾತೆ ರಚಿಸಿ",
         "auth.create_account": "ಖಾತೆ ರಚಿಸಿ",
-        "auth.cred_intro": "ನಿಮ್ಮ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನಿಂದ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
-        "auth.password": "ಪಾಸ್‌ವರ್ಡ್",
+        "auth.cred_intro": "ನಿಮ್ಮ ಇಮೇಲ್ ವಿಳಾಸ ಅಥವಾ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ಮತ್ತು ಪಾಸ್‌ವರ್ಡ್‌ನಿಂದ ಸೈನ್ ಇನ್ ಮಾಡಿ.",
+        "auth.identifier": "ಇಮೇಲ್ ವಿಳಾಸ ಅಥವಾ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ",
+        "auth.email": "ಇಮೇಲ್ ವಿಳಾಸ",
+        "auth.signin_prompt": "ನಿಮ್ಮ ಖಾತೆ ಮತ್ತು ಬುಕಿಂಗ್‌ಗಳನ್ನು ನೋಡಲು ಸೈನ್ ಇನ್ ಮಾಡಿ.",
+        "auth.err_identifier": "ಸರಿಯಾದ ಇಮೇಲ್ ವಿಳಾಸ ಅಥವಾ 10 ಅಂಕಿಯ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ.",
+        "auth.password": "ಪಾಸ್ವರ್ಡ್",
         "auth.password_rule": "ಕನಿಷ್ಠ 6 ಅಕ್ಷರಗಳು.",
         "auth.err_name": "ದಯವಿಟ್ಟು ನಿಮ್ಮ ಹೆಸರು ನಮೂದಿಸಿ.",
         "auth.err_password": "ಪಾಸ್‌ವರ್ಡ್ ಕನಿಷ್ಠ 6 ಅಕ್ಷರ ಇರಬೇಕು.",
@@ -499,7 +523,7 @@ FOOTER = """
 </footer>"""
 
 
-def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", title_fallback=""):
+def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", title_fallback="", bare=False):
     html = """<!doctype html>
 <html lang="en" data-theme="light">
 <head>
@@ -516,7 +540,7 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
 </head>
 <body data-page="%(page_id)s">
 %(header)s
-<main class="wrap">
+<main class="%(main_class)s">
 %(body)s
 </main>
 %(footer)s
@@ -533,9 +557,10 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
         "title": title_fallback or title_key,
         "page_id": page_id,
         "head": extra_head,
-        "header": header(title_key),
+        "header": "" if bare else header(title_key),
         "body": body,
-        "footer": FOOTER,
+        "footer": "" if bare else FOOTER,
+        "main_class": "auth-main" if bare else "wrap",
         "scripts": extra_scripts,
     }
     with open(os.path.join(HERE, filename), "w", encoding="utf-8") as f:
@@ -758,8 +783,48 @@ def build_pages():
   <h1 style="font-size:1.7rem" data-i18n="auth.account_title"></h1>
 </div>
 <div id="account" style="max-width:520px"></div>
+<noscript><p><a href="login.html">Sign in</a></p></noscript>
 """
     page("account.html", "account", "auth.account_title", account)
+
+
+    login_body = """
+<section class="auth-shell">
+  <div class="auth-visual" aria-label="Welcome">
+    <svg class="auth-curves" viewBox="0 0 600 800" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M-40 620 C 160 520, 240 700, 420 600 S 620 520, 700 560" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="2"/>
+      <path d="M-40 690 C 180 590, 260 770, 460 660 S 640 600, 720 640" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="2"/>
+      <circle cx="480" cy="150" r="120" fill="rgba(255,255,255,.05)"/>
+      <circle cx="90" cy="700" r="150" fill="rgba(255,255,255,.04)"/>
+    </svg>
+    <div class="auth-visual-inner">
+      <div class="auth-logo" aria-hidden="true">ಕ</div>
+      <h1>Welcome to <span>Smart Local Tourism Portal - Karnataka</span></h1>
+      <p class="auth-tagline">Discover, Explore and Experience the rich culture, heritage and natural beauty of Karnataka.</p>
+      <div class="auth-strip" aria-hidden="true">
+        <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg/1280px-Complex_of_Virupaksha_Temple%2C_Hampi_%2804%29.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><figcaption>Hampi</figcaption></figure>
+        <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Chandelier_Hall_Mysore_Palace_Dec23_A7C_08289.jpg/1280px-Chandelier_Hall_Mysore_Palace_Dec23_A7C_08289.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><figcaption>Mysuru Palace</figcaption></figure>
+        <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Jog_Falls%2C_Sep%2C_2016.jpg/1280px-Jog_Falls%2C_Sep%2C_2016.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><figcaption>Jog Falls</figcaption></figure>
+        <figure><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Abbey_Falls-Karnataka-India.jpg/1280px-Abbey_Falls-Karnataka-India.jpg" alt="" loading="lazy" referrerpolicy="no-referrer"><figcaption>Kodagu</figcaption></figure>
+      </div>
+      <p class="auth-visual-foot">© 2026 Smart Local Tourism Portal - Karnataka. All rights reserved.</p>
+    </div>
+  </div>
+
+  <div class="auth-panel">
+    <div class="auth-form-wrap">
+      <p class="auth-appname">Smart Local Tourism Portal</p>
+      <h2>Welcome Back!</h2>
+      <p class="auth-sub">Login to explore Karnataka tourism services.</p>
+      <div id="login-widget"></div>
+      <p class="auth-links muted"><a href="index.html">Continue browsing without signing in</a></p>
+    </div>
+  </div>
+</section>
+"""
+    page("login.html", "login", "auth.signin", login_body,
+         extra_head='<link rel="stylesheet" href="assets/css/login.css">', bare=True,
+         title_fallback="Login · Smart Local Tourism Portal - Karnataka")
 
     page("pay.html", "pay", "pay.title", '<div id="pay"></div>',
          title_fallback="Demo payment · Karnataka Tourism Portal")
