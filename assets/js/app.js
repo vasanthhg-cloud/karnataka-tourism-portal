@@ -503,9 +503,8 @@
     var host = $("#account");
     if (!host) return;
     if (!(window.KT_AUTH && KT_AUTH.isVerified())) {
-      host.innerHTML = '<div class="panel"><p class="muted">' + t("auth.signin_prompt",
-        "Sign in to see your account and bookings.") + '</p>' +
-        '<a class="btn" href="login.html">' + t("auth.signin") + "</a></div>";
+      // nobody should land on a dead page: go to the sign-in screen
+      location.replace("login.html");
       return;
     }
     if (window.KT_AUTH && KT_AUTH.isVerified()) {

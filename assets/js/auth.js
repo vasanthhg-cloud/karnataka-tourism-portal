@@ -458,7 +458,7 @@
           '<button class="btn sm ghost" type="button" id="sign-out">' + tt("auth.signout", "Sign out") + "</button>";
         box.querySelector("#sign-out").addEventListener("click", function () { AUTH.logout(); location.reload(); });
       } else {
-        box.innerHTML = '<a class="btn sm" href="account.html">' + tt("auth.signin", "Sign in") + "</a>";
+        box.innerHTML = '<a class="btn sm" href="login.html">' + tt("auth.signin", "Sign in") + "</a>";
       }
     }
   };

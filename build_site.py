@@ -12,6 +12,7 @@ import os
 import shutil
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+ASSET_VER = str(int(__import__("time").time()))   # cache-busting stamp for script/style URLs
 D_HQ, D_REGION = {}, {}
 SRC = os.path.join(HERE, "..", "karnataka-tourism")
 # Prefer the copy that ships with the site so the build works on its own.
@@ -534,7 +535,7 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Kannada:wght@400;600&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=%(ver)s">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
 %(head)s
 </head>
@@ -544,13 +545,13 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
 %(body)s
 </main>
 %(footer)s
-<script src="assets/js/data.js"></script>
-<script src="assets/js/i18n.js"></script>
-<script src="assets/js/content.js"></script>
-<script src="assets/js/config.js"></script>
-<script src="assets/js/auth.js"></script>
+<script src="assets/js/data.js?v=%(ver)s"></script>
+<script src="assets/js/i18n.js?v=%(ver)s"></script>
+<script src="assets/js/content.js?v=%(ver)s"></script>
+<script src="assets/js/config.js?v=%(ver)s"></script>
+<script src="assets/js/auth.js?v=%(ver)s"></script>
 %(scripts)s
-<script src="assets/js/app.js"></script>
+<script src="assets/js/app.js?v=%(ver)s"></script>
 </body>
 </html>
 """ % {
@@ -561,6 +562,7 @@ def page(filename, page_id, title_key, body, extra_head="", extra_scripts="", ti
         "body": body,
         "footer": "" if bare else FOOTER,
         "main_class": "auth-main" if bare else "wrap",
+        "ver": ASSET_VER,
         "scripts": extra_scripts,
     }
     with open(os.path.join(HERE, filename), "w", encoding="utf-8") as f:
@@ -823,7 +825,7 @@ def build_pages():
 </section>
 """
     page("login.html", "login", "auth.signin", login_body,
-         extra_head='<link rel="stylesheet" href="assets/css/login.css">', bare=True,
+         extra_head='<link rel="stylesheet" href="assets/css/login.css?v=%s">' % ASSET_VER, bare=True,
          title_fallback="Login · Smart Local Tourism Portal - Karnataka")
 
     page("pay.html", "pay", "pay.title", '<div id="pay"></div>',
