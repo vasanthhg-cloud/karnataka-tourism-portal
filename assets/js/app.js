@@ -994,6 +994,19 @@
   /* ------------------------------------------------------------------- init */
   function render() {
     var page = document.body.getAttribute("data-page");
+
+    // the site opens on the login page; the home page is for signed-in visitors
+    if (page === "home" && window.KT_AUTH && !KT_AUTH.isVerified()) {
+      try {
+        if (sessionStorage.getItem("kt-bounced") !== "1") {
+          sessionStorage.setItem("kt-bounced", "1");
+          location.replace("login.html");
+          return;
+        }
+      } catch (e) { location.replace("login.html"); return; }
+    }
+    if (page === "home") { try { sessionStorage.removeItem("kt-bounced"); } catch (e) {} }
+
     if (page === "home") renderHome();
     else if (page === "destinations") renderDestinationsPage();
     else if (page === "homestays") renderHomestaysPage();

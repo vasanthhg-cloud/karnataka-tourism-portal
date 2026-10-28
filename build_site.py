@@ -819,7 +819,6 @@ def build_pages():
       <h2>Welcome Back!</h2>
       <p class="auth-sub">Login to explore Karnataka tourism services.</p>
       <div id="login-widget"></div>
-      <p class="auth-links muted"><a href="index.html">Continue browsing without signing in</a></p>
     </div>
   </div>
 </section>
