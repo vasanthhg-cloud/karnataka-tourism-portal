@@ -139,3 +139,8 @@ a:hover{text-decoration:underline}
 .auth-panel .flash.success{background:#ecfdf3;border:1px solid #abefc6;color:var(--ok)}
 .auth-panel .otp-widget h3{font-size:1.05rem;margin:0 0 4px}
 .auth-panel .auth-links a{color:var(--blue-600)}
+
+/* ---------- helpline on the sign-in page ---------- */
+.auth-help{margin:18px 0 0;font-size:.83rem;color:var(--muted);text-align:center}
+.auth-help a{color:var(--blue-600);font-weight:600}
+.auth-help a:hover{text-decoration:underline}

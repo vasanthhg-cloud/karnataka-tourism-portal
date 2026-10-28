@@ -315,3 +315,8 @@ footer.site a:hover{color:var(--brand)}
 .auth-links a{font-size:.85rem;color:var(--brand);font-weight:600}
 .auth-links a:hover{text-decoration:underline}
 .otp-widget input[type=password]{letter-spacing:.12em}
+
+/* ---------- helpline ---------- */
+.helpline{font-size:.82rem;color:var(--muted);margin-bottom:6px}
+.helpline a{color:var(--brand);font-weight:600}
+.helpline a:hover{text-decoration:underline}

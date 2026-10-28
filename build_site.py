@@ -61,6 +61,8 @@ EXTRA = {
         "auth.working": "Please wait…",
         "auth.welcome": "Signed in",
         "auth.storage_note": "Accounts on this site are stored in this browser only.",
+        "footer.helpline": "Helpline",
+        "contact.helpline_note": "Call for help with bookings, listings or your account.",
         "auth.signin": "Sign in",
         "auth.signout": "Sign out",
         "auth.account": "Your account",
@@ -173,6 +175,8 @@ EXTRA = {
         "auth.working": "कृपया प्रतीक्षा करें…",
         "auth.welcome": "साइन इन हो गया",
         "auth.storage_note": "इस साइट के खाते केवल इसी ब्राउज़र में संग्रहित होते हैं।",
+        "footer.helpline": "हेल्पलाइन",
+        "contact.helpline_note": "बुकिंग, लिस्टिंग या अपने खाते में सहायता के लिए कॉल करें।",
         "auth.signin": "साइन इन",
         "auth.signout": "साइन आउट",
         "auth.account": "आपका खाता",
@@ -285,6 +289,8 @@ EXTRA = {
         "auth.working": "ದಯವಿಟ್ಟು ಕಾಯಿರಿ…",
         "auth.welcome": "ಸೈನ್ ಇನ್ ಆಗಿದೆ",
         "auth.storage_note": "ಈ ಸೈಟ್‌ನ ಖಾತೆಗಳು ಈ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಮಾತ್ರ ಸಂಗ್ರಹವಾಗುತ್ತವೆ.",
+        "footer.helpline": "ಸಹಾಯವಾಣಿ",
+        "contact.helpline_note": "ಬುಕಿಂಗ್, ಪಟ್ಟಿ ಅಥವಾ ನಿಮ್ಮ ಖಾತೆಗೆ ಸಹಾಯಕ್ಕಾಗಿ ಕರೆ ಮಾಡಿ.",
         "auth.signin": "ಸೈನ್ ಇನ್",
         "auth.signout": "ಸೈನ್ ಔಟ್",
         "auth.account": "ನಿಮ್ಮ ಖಾತೆ",
@@ -517,6 +523,10 @@ FOOTER = """
       </div>
     </div>
     <div class="legal">
+      <div class="helpline">
+        <span data-i18n="footer.helpline">Helpline</span>:
+        <a href="tel:+918310120984"><strong>Vasanth H G · +91 83101 20984</strong></a>
+      </div>
       <span data-i18n="footer.data"></span> · <span data-i18n="common.data_note"></span><br>
       <span data-i18n="site.note"></span>
     </div>
@@ -819,6 +829,8 @@ def build_pages():
       <h2>Welcome Back!</h2>
       <p class="auth-sub">Login to explore Karnataka tourism services.</p>
       <div id="login-widget"></div>
+      <p class="auth-help">Need help signing in? Call
+        <a href="tel:+918310120984"><strong>+91 83101 20984</strong></a> (Vasanth H G)</p>
     </div>
   </div>
 </section>
@@ -900,6 +912,13 @@ def build_pages():
     page("about.html", "about", "nav.about", about)
 
     contact = """
+<div class="panel" style="max-width:520px;margin:26px auto 0;text-align:center">
+  <span class="pill brand" data-i18n="footer.helpline">Helpline</span>
+  <h2 style="font-size:1.25rem;margin:10px 0 4px">Vasanth H G</h2>
+  <a class="btn" href="tel:+918310120984" style="font-size:1.05rem">+91 83101 20984</a>
+  <p class="small muted" style="margin:12px 0 0" data-i18n="contact.helpline_note"></p>
+</div>
+
 <div class="form-card">
   <h1 style="font-size:1.5rem" data-i18n="contact.title"></h1>
   <div class="note" style="margin-bottom:16px" data-i18n="contact.demo_note"></div>
