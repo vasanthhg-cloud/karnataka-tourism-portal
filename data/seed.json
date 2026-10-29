@@ -18500,6 +18500,2134 @@
    "article": "https://en.wikipedia.org/wiki/St._Antony_Church,_Naravi",
    "qid": "Q24952212",
    "district_source": "nearest"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Agaram Cemetery",
+   "category": "Heritage",
+   "lat": 12.96734,
+   "lon": 77.61801,
+   "coord_source": "wikipedia",
+   "description": "The Agaram Cemetery is an old Protestant cemetery in Bangalore, Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Agaram_cemetery_1834.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Agaram_cemetery_1834.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Agaram_cemetery_1834.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Agaram_Cemetery",
+   "qid": "Q47763569"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Atal Bihari Vajpayee TTMC",
+   "category": "Heritage",
+   "lat": 12.95427,
+   "lon": 77.5924,
+   "coord_source": "wikipedia",
+   "description": "The Atal Bihari Vajpayee Traffic and Transit Management Center, also Shantinagara Traffic and Transit Management Center, is a satellite bus station in Shantinagara, Bangalore, Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Shanthi_Nagar_Bus_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Shanthi_Nagar_Bus_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Shanthi_Nagar_Bus_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Atal_Bihari_Vajpayee_TTMC",
+   "qid": "Q7489090"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Banashankari TTMC",
+   "category": "Heritage",
+   "lat": 12.91776,
+   "lon": 77.573,
+   "coord_source": "wikipedia",
+   "description": "Banashankari TTMC is a key bus station hub located on Kanakapura Road in the Banashankari area of Bengaluru, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Banashankari_circle%2C_Bangalore_%282024%29_37.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Banashankari_circle%2C_Bangalore_%282024%29_37.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Banashankari_circle%2C_Bangalore_%282024%29_37.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Banashankari_TTMC",
+   "qid": "Q141759270"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Daly Memorial Hall",
+   "category": "Museum",
+   "lat": 12.97133,
+   "lon": 77.58695,
+   "coord_source": "wikipedia",
+   "description": "The Daly Memorial Hall, is a heritage building located in Bangalore, Karnataka that houses the Mythic Society.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Daly_memorial_hall_bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Daly_memorial_hall_bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Daly_memorial_hall_bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Daly_Memorial_Hall",
+   "qid": "Q5211784"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Diesel & Electric Loco Shed, Krishnarajapuram",
+   "category": "Heritage",
+   "lat": 13.0024,
+   "lon": 77.69284,
+   "coord_source": "wikipedia",
+   "description": "The Diesel & Electric Loco Shed, Krishnarajapuram is a motive power depot performing locomotive maintenance and repair facility for diesel locomotives and electric locomotives of the Indian Railways, located at Krishnarajapuram (KJM) of the South Western Railway zone in the city of Bengaluru, Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/A_Krishnarajapuram-based_WAG-9HC_at_Bangalore_City_Railway_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-A_Krishnarajapuram-based_WAG-9HC_at_Bangalore_City_Railway_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:A_Krishnarajapuram-based_WAG-9HC_at_Bangalore_City_Railway_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Diesel_&_Electric_Loco_Shed,_Krishnarajapuram",
+   "qid": "Q96191966"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Fort Church, Bengaluru",
+   "category": "Heritage",
+   "lat": 12.96288,
+   "lon": 77.57596,
+   "coord_source": "wikipedia",
+   "description": "The Fort Church, Bangalore, was a church located within Bangalore Fort.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Fort_Church_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Fort_Church_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Fort_Church_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Fort_Church,_Bengaluru",
+   "qid": "Q19873319"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Freedom Park, Bengaluru",
+   "category": "Wildlife",
+   "lat": 12.97727,
+   "lon": 77.58184,
+   "coord_source": "wikipedia",
+   "description": "Freedom Park is located in the Central Business District of the city of Bengaluru, Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Freedom_Park_Entrance.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Freedom_Park_Entrance.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Freedom_Park,_Bengaluru",
+   "qid": "Q5500576"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Gandhi Bazaar",
+   "category": "Heritage",
+   "lat": 12.94583,
+   "lon": 77.57083,
+   "coord_source": "wikipedia",
+   "description": "Gandhi Bazaar is a busy market area in Basavanagudi, Bangalore, known mainly for its flower and condiment hawker shops.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Gandhi_Bazaar_Circle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Gandhi_Bazaar_Circle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Gandhi_Bazaar_Circle.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Gandhi_Bazaar",
+   "qid": "Q39086796"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Global Village Tech Park",
+   "category": "Wildlife",
+   "lat": 12.9204,
+   "lon": 77.50429,
+   "coord_source": "wikipedia",
+   "description": "Sattva Global City (formerly Global Village Tech Park) is a software technology park in Bangalore, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Sattva_Global_City%2C_Rajarajeshwari_Nagar%2C_Bangalore_%282024%29_13.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Sattva_Global_City%2C_Rajarajeshwari_Nagar%2C_Bangalore_%282024%29_13.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Sattva_Global_City%2C_Rajarajeshwari_Nagar%2C_Bangalore_%282024%29_13.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Global_Village_Tech_Park",
+   "qid": "Q127427518"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Higginbotham's",
+   "category": "Heritage",
+   "lat": 13.0652,
+   "lon": 80.2664,
+   "coord_source": "wikipedia",
+   "description": "Higginbotham's is an Indian bookstore chain and publisher based in the city of Chennai.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Higginbothams.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Higginbothams.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Higginbothams.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Higginbotham's",
+   "qid": "Q1572944"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Hosakote Assembly constituency",
+   "category": "Heritage",
+   "lat": 13.07,
+   "lon": 77.79,
+   "coord_source": "wikipedia",
+   "description": "Hosakote Assembly constituency (also spelled Hosakote) is one of the seats in Karnataka State Assembly in India. It is part of Chikballapur Lok Sabha constituency.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/178-Hosakote_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-178-Hosakote_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:178-Hosakote_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Hosakote_Assembly_constituency",
+   "qid": "Q55435090"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Indian Institute of Astrophysics",
+   "category": "Heritage",
+   "lat": 14.27972,
+   "lon": 77.18,
+   "coord_source": "wikipedia",
+   "description": "The Indian Institute of Astrophysics (IIA), with its headquarters in Bengaluru, is an autonomous research institute wholly funded by the Department of Science and Technology, Government of India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Indian_Institute_of_Astrophysics_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Indian_Institute_of_Astrophysics_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Indian_Institute_of_Astrophysics_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Indian_Institute_of_Astrophysics",
+   "qid": "Q675608"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "International Tech Park, Bengaluru",
+   "category": "Wildlife",
+   "lat": 12.98564,
+   "lon": 77.73588,
+   "coord_source": "wikipedia",
+   "description": "International Tech Park commonly called ITPL or ITPB is a tech park located in Whitefield, Bangalore, 18 km from the city centre.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/ITPL-Whitefield-Bangalore1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-ITPL-Whitefield-Bangalore1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:ITPL-Whitefield-Bangalore1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/International_Tech_Park,_Bengaluru",
+   "qid": "Q4357999"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Jagannath Temple, Bengaluru",
+   "category": "Temple",
+   "lat": 19.8,
+   "lon": 85.82,
+   "coord_source": "wikipedia",
+   "description": "Jagannath Temple is dedicated to the Hindu god Jagannath, his brother Balabhadra, and sister Subhadra.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Puri_Jagannath_Temple_at_Agara.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Puri_Jagannath_Temple_at_Agara.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Puri_Jagannath_Temple_at_Agara.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Jagannath_Temple,_Bengaluru",
+   "qid": "Q14702654"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Jayamahal Palace Hotel",
+   "category": "Heritage",
+   "lat": 12.997,
+   "lon": 77.5974,
+   "coord_source": "wikipedia",
+   "description": "Jayamahal Palace was earlier known as Arni Hall and originally owned by the Jagirdar of Arni in Tamil Nadu around 1892. Jayamahal Palace Hotel is a 4-star heritage luxury hotel.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Jayamahal_Palace_Hotel_P_20170221_080900_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Jayamahal_Palace_Hotel_P_20170221_080900_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Jayamahal_Palace_Hotel_P_20170221_080900_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Jayamahal_Palace_Hotel",
+   "qid": "Q29026994"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Kadugodi Tree Park metro station",
+   "category": "Wildlife",
+   "lat": 12.98565,
+   "lon": 77.7469,
+   "coord_source": "wikipedia",
+   "description": "Kadugodi Tree Park (formerly known as Kadugodi) is an elevated metro station on the East-West corridor of the Purple Line of Namma Metro in Bengaluru, India which serves the suburban area of Kadugodi.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Kadugodi_Tree_Park_Metro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Kadugodi_Tree_Park_Metro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Kadugodi_Tree_Park_Metro.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Kadugodi_Tree_Park_metro_station",
+   "qid": "Q112683401"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Kempegowda Bus Station",
+   "category": "Heritage",
+   "lat": 12.97679,
+   "lon": 77.5726,
+   "coord_source": "wikipedia",
+   "description": "Kempegowda Bus Station (KBS) is an integrated main bus station in Bengaluru, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/K.S.R.T.C_terminal-2_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-K.S.R.T.C_terminal-2_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:K.S.R.T.C_terminal-2_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Kempegowda_Bus_Station",
+   "qid": "Q15235446"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Mysuru Road Bus Station",
+   "category": "Heritage",
+   "lat": 12.95308,
+   "lon": 77.54366,
+   "coord_source": "wikipedia",
+   "description": "Mysuru Road Bus Station (MRBS), is one of the four major bus stations that serve as mofussil bus station hubs for the city of Bengaluru, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Buses_Satellite_Bus_Station_Bengaluru%2C_Karnataka_IMG_20180611_124810.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Buses_Satellite_Bus_Station_Bengaluru%2C_Karnataka_IMG_20180611_124810.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Buses_Satellite_Bus_Station_Bengaluru%2C_Karnataka_IMG_20180611_124810.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Mysuru_Road_Bus_Station",
+   "qid": "Q6948717"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Pulakeshinagar Assembly constituency",
+   "category": "Garden & Lake",
+   "lat": 12.997,
+   "lon": 77.614,
+   "coord_source": "wikipedia",
+   "description": "Pulakeshinagar Assembly constituency is one of the 224 constituencies in the Karnataka Legislative Assembly of Karnataka, a southern state of India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/159-Pulakeshinagar_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-159-Pulakeshinagar_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:159-Pulakeshinagar_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Pulakeshinagar_Assembly_constituency",
+   "qid": "Q55435072"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Samsung Opera House",
+   "category": "Heritage",
+   "lat": -12.97257,
+   "lon": 77.60753,
+   "coord_source": "wikipedia",
+   "description": "Samsung Opera House is a heritage building and a chain of Samsung Electronics retail and experience centre located on Brigade Road in Bengaluru, India. It is considered as one of the world’s largest mobile experience centre currently.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Samsung_Opera_House.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Samsung_Opera_House.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Samsung_Opera_House.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Samsung_Opera_House",
+   "qid": "Q141447237"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "The Leela Palace Bengaluru",
+   "category": "Heritage",
+   "lat": 12.96056,
+   "lon": 77.64861,
+   "coord_source": "wikipedia",
+   "description": "The Leela Palace Bengaluru is a 357-room luxury hotel in Bengaluru, Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Airport_road_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Airport_road_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Airport_road_Bangalore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/The_Leela_Palace_Bengaluru",
+   "qid": "Q111402715"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "UB City",
+   "category": "Heritage",
+   "lat": 12.97175,
+   "lon": 77.59583,
+   "coord_source": "wikipedia",
+   "description": "UB City is a mixed-use high-rise complex in Bengaluru, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/UBtowers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-UBtowers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:UBtowers.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/UB_City",
+   "qid": "Q3595524"
+  },
+  {
+   "district_id": 1,
+   "district": "Bengaluru Urban",
+   "name": "Visvesvaraya Centre",
+   "category": "Heritage",
+   "lat": 12.98242,
+   "lon": 77.59579,
+   "coord_source": "wikipedia",
+   "description": "The Visvesvaraya Centre (better known as Visvesvaraya Towers) is a government office complex in Bangalore.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Visvesvaraya_Tower_Bangalore_5-31-2008_4-49-07_PM.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Visvesvaraya_Tower_Bangalore_5-31-2008_4-49-07_PM.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Visvesvaraya_Tower_Bangalore_5-31-2008_4-49-07_PM.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Visvesvaraya_Centre",
+   "qid": "Q130215606"
+  },
+  {
+   "district_id": 2,
+   "district": "Bengaluru Rural",
+   "name": "Venugopalaswamy Temple, Devanahalli",
+   "category": "Temple",
+   "lat": 13.23,
+   "lon": 77.7,
+   "coord_source": "wikipedia",
+   "description": "The Venugopalaswamy Temple, dedicated to a form of the Hindu god Vishnu is located inside the Devanahalli Fort in the town of Devanahalli (also called Devanapura).",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Venugopalaswamy_temple_in_the_Devanahalli_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Venugopalaswamy_temple_in_the_Devanahalli_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Venugopalaswamy_temple_in_the_Devanahalli_fort.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Venugopalaswamy_Temple,_Devanahalli",
+   "qid": "Q24906623"
+  },
+  {
+   "district_id": 3,
+   "district": "Mysuru",
+   "name": "C V Rangacharlu Memorial Hall",
+   "category": "Museum",
+   "lat": 12.30979,
+   "lon": 76.65588,
+   "coord_source": "wikipedia",
+   "description": "The Rangacharlu Memorial Hall, commonly known as Mysore Town Hall and colloquially referred to simply as the Town Hall, is a Neoclassical-styled public building that was constructed in 1884 in memory of the 14th Diwan of Mysore Sir C.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Rangacharlu_Memorial_Hall_%28Town_Hall%29%2C_Mysore_%28b%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Rangacharlu_Memorial_Hall_%28Town_Hall%29%2C_Mysore_%28b%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Rangacharlu_Memorial_Hall_%28Town_Hall%29%2C_Mysore_%28b%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/C_V_Rangacharlu_Memorial_Hall",
+   "qid": "Q28154314"
+  },
+  {
+   "district_id": 3,
+   "district": "Mysuru",
+   "name": "Happy Man Park",
+   "category": "Wildlife",
+   "lat": 12.29937,
+   "lon": 76.62475,
+   "coord_source": "wikipedia",
+   "description": "Happy Man Park is one of the tourist attractions of Mysore city in Karnataka province, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Happy_Man_Park6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Happy_Man_Park6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Happy_Man_Park6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Happy_Man_Park",
+   "qid": "Q24893294"
+  },
+  {
+   "district_id": 3,
+   "district": "Mysuru",
+   "name": "Pramati Hillview Academy",
+   "category": "Hill Station",
+   "lat": 12.28605,
+   "lon": 76.6289,
+   "coord_source": "wikipedia",
+   "description": "Pramati Hillview Academy is an Indian junior college and senior secondary school located at Kuvempu Nagar in Mysore, Karnataka. The school is being run by H.V. Rajeeva. The management president is Bhavani Shankar . The school was inaugurated by the acharaya of madhva peetam.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Sanskrit_festival_at_Pramati_School%2C_Mysore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Sanskrit_festival_at_Pramati_School%2C_Mysore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Sanskrit_festival_at_Pramati_School%2C_Mysore.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Pramati_Hillview_Academy",
+   "qid": "Q24897042"
+  },
+  {
+   "district_id": 3,
+   "district": "Mysuru",
+   "name": "Regional Museum of Natural History Mysore",
+   "category": "Museum",
+   "lat": 12.30585,
+   "lon": 76.6741,
+   "coord_source": "wikipedia",
+   "description": "The Regional Museum of Natural History at Mysore is a museum in India with exhibits on plants, animals and geology of the southern region of India. Established in 1995, it is located on the banks of Karanji Lake.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Main_Building_RMNH_Mysore_Aug24_A7CR_02127.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Main_Building_RMNH_Mysore_Aug24_A7CR_02127.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Main_Building_RMNH_Mysore_Aug24_A7CR_02127.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Regional_Museum_of_Natural_History_Mysore",
+   "qid": "Q7309109"
+  },
+  {
+   "district_id": 4,
+   "district": "Kodagu",
+   "name": "Brahmagiri Wildlife Sanctuary",
+   "category": "Wildlife",
+   "lat": 12.387,
+   "lon": 75.491,
+   "coord_source": "wikipedia",
+   "description": "The Brahmagiri Wildlife Sanctuary is located in Kodagu District, Karnataka State, India, within the Western Ghats and about 250 km from Bengaluru.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Brahmagiri_wildlife_sanctuary.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Brahmagiri_wildlife_sanctuary.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Brahmagiri_wildlife_sanctuary.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Brahmagiri_Wildlife_Sanctuary",
+   "qid": "Q4955532"
+  },
+  {
+   "district_id": 4,
+   "district": "Kodagu",
+   "name": "Madikeri Assembly constituency",
+   "category": "Heritage",
+   "lat": 12.43,
+   "lon": 75.73,
+   "coord_source": "wikipedia",
+   "description": "Madikeri Assembly constituency is one of the 224 Legislative Assembly constituencies of Karnataka in India. It is part of Kodagu district and is one among the two legislative assembly constituency from the district. Madekeri Mantar Gowda who won the 2023 Karnataka Legislative Assembly election is the current MLA from this constituency.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/208-Madikeri_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-208-Madikeri_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:208-Madikeri_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Madikeri_Assembly_constituency",
+   "qid": "Q55435119"
+  },
+  {
+   "district_id": 4,
+   "district": "Kodagu",
+   "name": "Virajpet Clock Tower",
+   "category": "Heritage",
+   "lat": 12.197,
+   "lon": 75.8023,
+   "coord_source": "wikipedia",
+   "description": "Virajpet Clock Tower is a clock tower in the town of Virajpet in Kodagu district, in the Indian State of Karnataka. The tower was built to commemorate the coronation of George V at the Delhi Durbar in 1911, and was inaugurated in 1915. To mark its centenary, a philatelic cover was released by Karnataka Postal Circle on 16 January 2015.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Virajpet_clocktower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Virajpet_clocktower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Virajpet_clocktower.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Virajpet_Clock_Tower",
+   "qid": "Q24906948"
+  },
+  {
+   "district_id": 5,
+   "district": "Dakshina Kannada",
+   "name": "Edward & Cynthia Institute of Public Health",
+   "category": "Heritage",
+   "lat": 12.8579,
+   "lon": 74.8894,
+   "coord_source": "wikipedia",
+   "description": "Edward & Cynthia Institute of Public Health (ECIPH) is a Mangaluru based academic and research institute focused on global health and policy.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Edward_%26_Cynthia_Institute_of_Public_Health_in_Mangalore_City.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Edward_%26_Cynthia_Institute_of_Public_Health_in_Mangalore_City.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Edward_%26_Cynthia_Institute_of_Public_Health_in_Mangalore_City.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Edward_&_Cynthia_Institute_of_Public_Health",
+   "qid": "Q124448808"
+  },
+  {
+   "district_id": 5,
+   "district": "Dakshina Kannada",
+   "name": "Jamalabad",
+   "category": "Heritage",
+   "lat": 13.02705,
+   "lon": 75.29473,
+   "coord_source": "wikipedia",
+   "description": "Jamalabad Fort is an old hilltop fortification in Killoor road, Belthangady, Dakshina Kannada District, Karnataka, India. It is located in the Kudremukh range of hills, 8 km north of Beltangady town and 65 km from the city of Mangalore. It is also referred locally as \"Jamalabad Fort\" or \"Gadaikallu\".",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/en/f/fc/Jamalabad_Rock%28Gadaikallu%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Jamalabad_Rock%28Gadaikallu%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Jamalabad",
+   "qid": "Q28195181"
+  },
+  {
+   "district_id": 5,
+   "district": "Dakshina Kannada",
+   "name": "Kalikamba Temple",
+   "category": "Temple",
+   "lat": 12.87035,
+   "lon": 74.83439,
+   "coord_source": "wikipedia",
+   "description": "Sri Kalikamba Vinayaka Temple is located in Lower Car Street, Mangalore, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/en/f/f4/Skvt_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Skvt_temple.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Kalikamba_Temple",
+   "qid": "Q6352664"
+  },
+  {
+   "district_id": 5,
+   "district": "Dakshina Kannada",
+   "name": "Kudroli Bhagavathi Temple",
+   "category": "Temple",
+   "lat": 12.8757,
+   "lon": 74.8378,
+   "coord_source": "wikipedia",
+   "description": "The Kudroli Shri Bhagavathi Kshetra is a temple located in the heart of the city in Kodialbail, Mangalore in Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Kudroli_Bhagavathi_Khsethra_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Kudroli_Bhagavathi_Khsethra_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Kudroli_Bhagavathi_Khsethra_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Kudroli_Bhagavathi_Temple",
+   "qid": "Q17060126"
+  },
+  {
+   "district_id": 6,
+   "district": "Uttara Kannada",
+   "name": "Ganden Monastery",
+   "category": "Temple",
+   "lat": 29.758,
+   "lon": 91.475,
+   "coord_source": "wikipedia",
+   "description": "Ganden Monastery (also Gaden or Gandain) or Ganden Namgyeling or Monastery of Gahlden is one of the \"great three\" Gelug university monasteries located in Dagzê County, Lhasa, Tibet.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Ganden_monastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Ganden_monastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Ganden_monastery.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Ganden_Monastery",
+   "qid": "Q932446"
+  },
+  {
+   "district_id": 6,
+   "district": "Uttara Kannada",
+   "name": "Kaiga Atomic Power Station",
+   "category": "Heritage",
+   "lat": 14.86532,
+   "lon": 74.43964,
+   "coord_source": "wikipedia",
+   "description": "Kaiga Generating Station is a nuclear power generating station situated at Kaiga, near the river Kali, in Uttara Kannada district of Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Kaiga_Atomic_Power_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Kaiga_Atomic_Power_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Kaiga_Atomic_Power_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Kaiga_Atomic_Power_Station",
+   "qid": "Q1739416"
+  },
+  {
+   "district_id": 6,
+   "district": "Uttara Kannada",
+   "name": "Netrani Island",
+   "category": "Beach",
+   "lat": 14.0165,
+   "lon": 74.3259,
+   "coord_source": "wikipedia",
+   "description": "Netrani (historically known as Bajrangi Island, Pigeon Island and also Heart Shaped Island) is a small island of India located in the Arabian Sea.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Netrani_Island_Arial_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Netrani_Island_Arial_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Netrani_Island_Arial_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Netrani_Island",
+   "qid": "Q10751334"
+  },
+  {
+   "district_id": 7,
+   "district": "Udupi",
+   "name": "Church of Our Lady of Rosary, Kallianpur",
+   "category": "Heritage",
+   "lat": 13.38699,
+   "lon": 74.72552,
+   "coord_source": "wikipedia",
+   "description": "Mount Rosary Church (Portuguese: De Nossa Senhora do Rosario de Calliampoor) is a Roman Catholic Church situated in Kallianpur, a suburb of Udupi City in the Udupi district of India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Mount_Rosary_Church%2C_Kallianpura%2C_Santhekatte.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Mount_Rosary_Church%2C_Kallianpura%2C_Santhekatte.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Mount_Rosary_Church%2C_Kallianpura%2C_Santhekatte.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Church_of_Our_Lady_of_Rosary,_Kallianpur",
+   "qid": "Q6923277"
+  },
+  {
+   "district_id": 7,
+   "district": "Udupi",
+   "name": "St Vincent De Paul Church, Katapady",
+   "category": "Heritage",
+   "lat": 13.28902,
+   "lon": 74.75281,
+   "coord_source": "wikipedia",
+   "description": "St Vincent De Paul Church (SVP) is a Roman Catholic church in Katapady in Udupi district, Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/St_Vincent_De_Paul_Church_seen_during_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-St_Vincent_De_Paul_Church_seen_during_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:St_Vincent_De_Paul_Church_seen_during_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/St_Vincent_De_Paul_Church,_Katapady",
+   "qid": "Q16900541"
+  },
+  {
+   "district_id": 8,
+   "district": "Shivamogga",
+   "name": "Agumbe Rainforest Research Station",
+   "category": "Wildlife",
+   "lat": 13.51811,
+   "lon": 75.08882,
+   "coord_source": "wikipedia",
+   "description": "The Agumbe Rainforest Research Station (ARRS) is a field based conservation and research organisation situated inside the Agumbe Reserved Forest at Agumbe in the central Western Ghats of southern India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Agumbe_Rainforest_Research_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Agumbe_Rainforest_Research_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Agumbe_Rainforest_Research_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Agumbe_Rainforest_Research_Station",
+   "qid": "Q4694577"
+  },
+  {
+   "district_id": 10,
+   "district": "Belagavi",
+   "name": "Belagavi district",
+   "category": "Cave",
+   "lat": 15.85,
+   "lon": 74.55,
+   "coord_source": "wikipedia",
+   "description": "Belagavi district (Kannada ISO: Beḷagāvi, IPA: [beɭɐɡaːʋi]; Marathi ISO: Beḷagāṃva, IPA: [beɭɡaːũ]), formerly also known as Belgaum district, is a district in the state of Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Kamal_Basti%2C_Belgaum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Kamal_Basti%2C_Belgaum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Kamal_Basti%2C_Belgaum.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Belagavi_district",
+   "qid": "Q815464"
+  },
+  {
+   "district_id": 10,
+   "district": "Belagavi",
+   "name": "Belagavi division",
+   "category": "Cave",
+   "lat": 15.85,
+   "lon": 74.5,
+   "coord_source": "wikipedia",
+   "description": "Belagavi division, formerly Belgaum division, is one of the four divisions of Indian state of Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Karnataka-divisions-Belgaum.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Karnataka-divisions-Belgaum.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Karnataka-divisions-Belgaum.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Belagavi_division",
+   "qid": "Q815447"
+  },
+  {
+   "district_id": 10,
+   "district": "Belagavi",
+   "name": "Belgaum Airport",
+   "category": "Heritage",
+   "lat": 15.85917,
+   "lon": 74.6175,
+   "coord_source": "wikipedia",
+   "description": "Belgaum Airport (IATA: IXG, ICAO: VOBM), also known as Belagavi Airport, is a domestic airport serving Belgaum, Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Belagavi_Airport.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Belagavi_Airport.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Belagavi_Airport.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Belgaum_Airport",
+   "qid": "Q1657741"
+  },
+  {
+   "district_id": 11,
+   "district": "Ballari",
+   "name": "Jindal Vijayanagar Airport",
+   "category": "Heritage",
+   "lat": 15.175,
+   "lon": 76.6341,
+   "coord_source": "wikipedia",
+   "description": "Jindal Vijayanagar Airport (IATA: VDY, ICAO: VOJV), also known as Vidyanagar Airport, is a public airport serving Bellary, Hampi and Hospet in Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Jindal_Vijaynagar_Airport_terminal%2C_Jan_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Jindal_Vijaynagar_Airport_terminal%2C_Jan_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Jindal_Vijaynagar_Airport_terminal%2C_Jan_2007.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Jindal_Vijayanagar_Airport",
+   "qid": "Q3529756"
+  },
+  {
+   "district_id": 11,
+   "district": "Ballari",
+   "name": "Tungabhadra Dam",
+   "category": "Garden & Lake",
+   "lat": 15.3,
+   "lon": 76.33333,
+   "coord_source": "wikipedia",
+   "description": "The Tungabhadra Dam, also known as Pampa Sagar, is a water reservoir constructed across the Tungabhadra River in the Hosapete-Koppal confluence in Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Tungabhadra_dam_all_gates_open.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Tungabhadra_dam_all_gates_open.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Tungabhadra_dam_all_gates_open.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Tungabhadra_Dam",
+   "qid": "Q7853026"
+  },
+  {
+   "district_id": 12,
+   "district": "Vijayapura",
+   "name": "Gagan Mahal",
+   "category": "Heritage",
+   "lat": 16.82655,
+   "lon": 75.71846,
+   "coord_source": "wikipedia",
+   "description": "The Gagan Mahal (\"heavenly palace\") is a palace located within the Bijapur Fort.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Gagan_Mahal_Bijapura.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Gagan_Mahal_Bijapura.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Gagan_Mahal_Bijapura.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Gagan_Mahal",
+   "qid": "Q140409155"
+  },
+  {
+   "district_id": 12,
+   "district": "Vijayapura",
+   "name": "Nav Gumbaz",
+   "category": "Heritage",
+   "lat": 16.8261,
+   "lon": 75.7268,
+   "coord_source": "wikipedia",
+   "description": "The Nav Gumbaz (literally \"nine domes\"), also called the Nau Gumbaz, is a mosque located in Bijapur, in the state of Karnataka, India. It was built during the reign of the Bijapur Sultanate. The mosque structure is a Monument of National Importance.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Nau_Gumbaz_%28Nav_Gumbaz%29_in_Bijapur.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Nau_Gumbaz_%28Nav_Gumbaz%29_in_Bijapur.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Nau_Gumbaz_%28Nav_Gumbaz%29_in_Bijapur.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Nav_Gumbaz",
+   "qid": "Q131766264"
+  },
+  {
+   "district_id": 13,
+   "district": "Kalaburagi",
+   "name": "Kalaburagi Airport",
+   "category": "Heritage",
+   "lat": 17.30778,
+   "lon": 76.95806,
+   "coord_source": "wikipedia",
+   "description": "Kalaburagi Airport (IATA: GBI, ICAO: VOGB) is a domestic airport serving the city of Kalaburagi in Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Kalaburagi_Airport.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Kalaburagi_Airport.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Kalaburagi_Airport.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Kalaburagi_Airport",
+   "qid": "Q5617269"
+  },
+  {
+   "district_id": 14,
+   "district": "Dharwad",
+   "name": "Chandramauleshwara Temple, Unkal",
+   "category": "Temple",
+   "lat": 15.37678,
+   "lon": 75.11667,
+   "coord_source": "wikipedia",
+   "description": "The Chandramauleshwara Temple, sometimes referred to as the Candramauḷĩśvara or Chandramouleshwara temple at Unkal, is an 11th-century Shiva temple with Chalukyan architecture in Unkal (Hubballi), Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Chandramouleshware_Temple.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Chandramouleshware_Temple.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Chandramouleshware_Temple.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Chandramauleshwara_Temple,_Unkal",
+   "qid": "Q5071410"
+  },
+  {
+   "district_id": 16,
+   "district": "Hassan",
+   "name": "Chandragiri Hill",
+   "category": "Hill Station",
+   "lat": 12.86167,
+   "lon": 76.48778,
+   "coord_source": "wikipedia",
+   "description": "Chandragiri, also known as Chikka betta is one of the two hills in Shravanabelagola in the Indian state of Karnataka, the other one being Vindhyagiri. It is also designated as Indragiri.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Old_Kannada_inscription_from_7th_century_at_Chandragiri_hill_in_Shravanabelagola.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Old_Kannada_inscription_from_7th_century_at_Chandragiri_hill_in_Shravanabelagola.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Old_Kannada_inscription_from_7th_century_at_Chandragiri_hill_in_Shravanabelagola.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Chandragiri_Hill",
+   "qid": "Q5071334"
+  },
+  {
+   "district_id": 16,
+   "district": "Hassan",
+   "name": "Jain temples, Halebidu",
+   "category": "Temple",
+   "lat": 13.20867,
+   "lon": 75.99511,
+   "coord_source": "wikipedia",
+   "description": "Jain hoysala complex in Halebidu, Hassan district consists of three Jain Basadis (Basti or temples) dedicated to the Jain Tirthankars Parshvanatha, Shantinatha and Adinatha.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Profile_of_the_Parshvanatha_basadi_%281133_AD%29_at_Halebidu.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Profile_of_the_Parshvanatha_basadi_%281133_AD%29_at_Halebidu.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Profile_of_the_Parshvanatha_basadi_%281133_AD%29_at_Halebidu.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Jain_temples,_Halebidu",
+   "qid": "Q30625801"
+  },
+  {
+   "district_id": 16,
+   "district": "Hassan",
+   "name": "Master Control Facility",
+   "category": "Heritage",
+   "lat": 13.0717,
+   "lon": 76.0994,
+   "coord_source": "wikipedia",
+   "description": "The Master Control Facility (MCF) is a facility set up by ISRO in the city of Hassan in the Indian state of Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Insat-1B.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Insat-1B.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Insat-1B.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Master_Control_Facility",
+   "qid": "Q3520782"
+  },
+  {
+   "district_id": 16,
+   "district": "Hassan",
+   "name": "Odegal basadi",
+   "category": "Temple",
+   "lat": 12.855,
+   "lon": 76.485,
+   "coord_source": "wikipedia",
+   "description": "Odegal basadi or Vadegal basadi is the largest basadi located on the Vindhyagiri Hill in Shravanabelagola in the Indian state of Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Odegal_basadi_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Odegal_basadi_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Odegal_basadi_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Odegal_basadi",
+   "qid": "Q104521581"
+  },
+  {
+   "district_id": 17,
+   "district": "Mandya",
+   "name": "Krishna Raja Sagara",
+   "category": "Heritage",
+   "lat": 12.42472,
+   "lon": 76.57222,
+   "coord_source": "wikipedia",
+   "description": "Krishna Raja Sagara, also known as KRS and, locally, as Kannambadi Katte, is a lake and the dam that forms it.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Krishna_raja_sagara_dam.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Krishna_raja_sagara_dam.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Krishna_raja_sagara_dam.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Krishna_Raja_Sagara",
+   "qid": "Q3536528"
+  },
+  {
+   "district_id": 17,
+   "district": "Mandya",
+   "name": "Kunti Betta",
+   "category": "Hill Station",
+   "lat": 12.5078,
+   "lon": 76.6978,
+   "coord_source": "wikipedia",
+   "description": "Kunti Betta (also spelled Kunthi Betta) is a set of two rocky hills in Pandavapura, Mandya district, Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/KuntiBetta01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-KuntiBetta01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:KuntiBetta01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Kunti_Betta",
+   "qid": "Q133855198"
+  },
+  {
+   "district_id": 17,
+   "district": "Mandya",
+   "name": "Saumyakeshava Temple, Nagamangala",
+   "category": "Temple",
+   "lat": 12.81944,
+   "lon": 76.75361,
+   "coord_source": "wikipedia",
+   "description": "The Saumyakeshava temple (also spelt Sauymakesava or Soumyakeshava) at Nagamangala was constructed in the 12th century by the rulers of the Hoysala empire.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Saumyakeshava_temple_%28rear_view_of_stellate_shrine%29_at_Nagamangala.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Saumyakeshava_temple_%28rear_view_of_stellate_shrine%29_at_Nagamangala.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Saumyakeshava_temple_%28rear_view_of_stellate_shrine%29_at_Nagamangala.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Saumyakeshava_Temple,_Nagamangala",
+   "qid": "Q15275557"
+  },
+  {
+   "district_id": 18,
+   "district": "Tumakuru",
+   "name": "Pavagada Solar Park",
+   "category": "Wildlife",
+   "lat": 14.25,
+   "lon": 77.45,
+   "coord_source": "wikipedia",
+   "description": "Shakti Sthala (Energy Space), also called Pavagada Solar Park is a solar park covering an area of 53 square kilometres (13,000 acres) in Pavagada taluk, Tumkur district, Karnataka.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Pavagada_Solar_Park_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Pavagada_Solar_Park_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Pavagada_Solar_Park_2020.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Pavagada_Solar_Park",
+   "qid": "Q29026621"
+  },
+  {
+   "district_id": 18,
+   "district": "Tumakuru",
+   "name": "Siddaganga Matha",
+   "category": "Temple",
+   "lat": 13.32174,
+   "lon": 77.1486,
+   "coord_source": "wikipedia",
+   "description": "Shree Siddaganga Matha also known as Shree Siddaganga Kshetra, is a Lingayata monastery, with an attached educational institution.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Basavanna.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Basavanna.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Basavanna.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Siddaganga_Matha",
+   "qid": "Q7508029"
+  },
+  {
+   "district_id": 19,
+   "district": "Chitradurga",
+   "name": "Holalkere Assembly constituency",
+   "category": "Garden & Lake",
+   "lat": 14.05,
+   "lon": 76.18,
+   "coord_source": "wikipedia",
+   "description": "Holalkere Assembly constituency is one of the 224 Legislative Assembly constituencies of Karnataka in India. It is part of Chitradurga district and is reserved for candidates belonging to the Scheduled Castes. M. Chandrappa is the current MLA of Holalkere.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/102-Holalkere_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-102-Holalkere_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:102-Holalkere_constituency.svg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Holalkere_Assembly_constituency",
+   "qid": "Q55435006"
+  },
+  {
+   "district_id": 19,
+   "district": "Chitradurga",
+   "name": "Ranganathaswamy Temple, Nirthadi",
+   "category": "Temple",
+   "lat": 14.35303,
+   "lon": 76.1468,
+   "coord_source": "wikipedia",
+   "description": "The Ranganatha Swamy Temple at Nirthadi (also spelt Neerthadi or Niratadi), is a post-Vijayanagara Empire re-construction.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Tower_over_shrine_at_Ranganatha_Swamy_temple_in_Neerthadi.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Tower_over_shrine_at_Ranganatha_Swamy_temple_in_Neerthadi.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Tower_over_shrine_at_Ranganatha_Swamy_temple_in_Neerthadi.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Ranganathaswamy_Temple,_Nirthadi",
+   "qid": "Q19895759"
+  },
+  {
+   "district_id": 21,
+   "district": "Chikkaballapura",
+   "name": "Gauribidanur Radio Observatory",
+   "category": "Heritage",
+   "lat": 13.6,
+   "lon": 77.43,
+   "coord_source": "wikipedia",
+   "description": "The Gauribidanur Radio Observatory is a radio telescope observatory located at Gauribidanur, near Bengaluru. It is operated jointly by Raman Research Institute and the Indian Institute of Astrophysics. The observatory has been in operation since 1976.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Gouribidanur_radio_observatory.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Gouribidanur_radio_observatory.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Gouribidanur_radio_observatory.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Gauribidanur_Radio_Observatory",
+   "qid": "Q5527788"
+  },
+  {
+   "district_id": 23,
+   "district": "Chamarajanagara",
+   "name": "2019 Bandipur forest fires",
+   "category": "Wildlife",
+   "lat": 11.66167,
+   "lon": 76.62722,
+   "coord_source": "wikipedia",
+   "description": "In February 2019, major forest fires broke out in numerous places across the Bandipur National Park in Karnataka state in India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Bandipur_fires_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Bandipur_fires_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Bandipur_fires_2019.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/2019_Bandipur_forest_fires",
+   "qid": "Q62019577"
+  },
+  {
+   "district_id": 23,
+   "district": "Chamarajanagara",
+   "name": "Gopalaswamy Hills",
+   "category": "Hill Station",
+   "lat": 11.71667,
+   "lon": 76.58333,
+   "coord_source": "wikipedia",
+   "description": "Himavad Gopalaswamy Betta, is a hill (betta in Kannada) located in the Gundlupete Taluk, Chamarajanagar district of the state of Karnataka, India at a height of 1450m and is extensively wooded.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Gopalswamy_Betta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Gopalswamy_Betta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Gopalswamy_Betta.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Gopalaswamy_Hills",
+   "qid": "Q11924488"
+  },
+  {
+   "district_id": 24,
+   "district": "Bagalkote",
+   "name": "Badami Fort",
+   "category": "Heritage",
+   "lat": 15.92328,
+   "lon": 75.68249,
+   "coord_source": "wikipedia",
+   "description": "Badami Fort is a hill fortress in the town of Badami, formerly, known as Vatapi.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/HBPA_N_1008_Badami_NorthFort_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-HBPA_N_1008_Badami_NorthFort_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:HBPA_N_1008_Badami_NorthFort_View.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Badami_Fort",
+   "qid": "Q131303115"
+  },
+  {
+   "district_id": 24,
+   "district": "Bagalkote",
+   "name": "Badami railway station",
+   "category": "Garden & Lake",
+   "lat": 15.95914,
+   "lon": 75.67475,
+   "coord_source": "wikipedia",
+   "description": "Badami railway station (station code: BDM) falls under Hubli railway division of South Western Railway in Bagalkot district, Karnataka, India. Badami railway station has two platforms which serve mainly Badami Town and nearby heritage tourist places like Badami Caves, Pattadkal and Aihole.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/BadamiCaves87.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-BadamiCaves87.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:BadamiCaves87.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Badami_railway_station",
+   "qid": "Q25549049"
+  },
+  {
+   "district_id": 24,
+   "district": "Bagalkote",
+   "name": "Bhutanatha group of temples, Badami",
+   "category": "Temple",
+   "lat": 15.92083,
+   "lon": 75.68778,
+   "coord_source": "wikipedia",
+   "description": "The Bhutanatha group of temples are 7th to 12th century Hindu temples to the east of Agastya lake in Badami, Karnataka state, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Bhutanatha_group_of_temples%2C_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Bhutanatha_group_of_temples%2C_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Bhutanatha_group_of_temples%2C_Badami.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Bhutanatha_group_of_temples,_Badami",
+   "qid": "Q3517721"
+  },
+  {
+   "district_id": 24,
+   "district": "Bagalkote",
+   "name": "Cholachagudda",
+   "category": "Hill Station",
+   "lat": 15.8722,
+   "lon": 75.72,
+   "coord_source": "wikipedia",
+   "description": "Cholachagudda is in Bagalkot District (Badami Taluka) Karnataka State of India, it is near Badami. It is on the bank of Malaprabha river which is a tributary of Krishna river. It has two famous Hindu temples dedicated to Banashankari and Virabadhreshwara. It is known for its paan leaves plantation, clove-chillies and banana plantations.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Banashankari_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Banashankari_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Banashankari_1.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Cholachagudda",
+   "qid": "Q5104276"
+  },
+  {
+   "district_id": 25,
+   "district": "Gadag",
+   "name": "Doddabasappa Temple",
+   "category": "Temple",
+   "lat": 15.32806,
+   "lon": 75.81028,
+   "coord_source": "wikipedia",
+   "description": "Doddabasappa Temple (Kannada: ದೊಡ್ಡಬಸಪ್ಪ ದೇವಸ್ಥಾನ) is a 12th-century Western Chalukyan architectural innovation in Dambal, Karnataka state, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Dodda_Basappa_Temple.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Dodda_Basappa_Temple.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Dodda_Basappa_Temple.JPG?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Doddabasappa_Temple",
+   "qid": "Q5287741"
+  },
+  {
+   "district_id": 27,
+   "district": "Koppal",
+   "name": "Zenana Mahal",
+   "category": "Heritage",
+   "lat": 15.32089,
+   "lon": 76.47088,
+   "coord_source": "wikipedia",
+   "description": "The Zenana Mahal (also known as the Zenana Enclosure) is a palace complex located in the city of Hampi, which was the capital of the Vijayanagara Dynasty.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Queen%27s_Palace_and_northeast_watch_tower%2C_Hampi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Queen%27s_Palace_and_northeast_watch_tower%2C_Hampi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Queen%27s_Palace_and_northeast_watch_tower%2C_Hampi.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Zenana_Mahal",
+   "qid": "Q140068532"
+  },
+  {
+   "district_id": 28,
+   "district": "Raichur",
+   "name": "Ek Minar Mosque, Raichur",
+   "category": "Heritage",
+   "lat": 16.2033,
+   "lon": 77.35267,
+   "coord_source": "wikipedia",
+   "description": "The Ek Minar Mosque, also known as Ek Minar Masjid (lit. 'One-minaret Mosque') and Ek Minar Ki Masjid (lit.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ek_Minar_Masjid%2C_Raichur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Ek_Minar_Masjid%2C_Raichur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Ek_Minar_Masjid%2C_Raichur.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Ek_Minar_Mosque,_Raichur",
+   "qid": "Q123662973"
+  },
+  {
+   "district_id": 28,
+   "district": "Raichur",
+   "name": "Raichur Thermal Power Station",
+   "category": "Heritage",
+   "lat": 16.355,
+   "lon": 77.34194,
+   "coord_source": "wikipedia",
+   "description": "Raichur Thermal Power Station (RTPS) is a coal-fired electric power station located at Yadlapur D(Shaktinagar) in the Raichur district of the state of Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Raichur_Thermal_Power_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Raichur_Thermal_Power_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Raichur_Thermal_Power_Station.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Raichur_Thermal_Power_Station",
+   "qid": "Q7283704"
+  },
+  {
+   "district_id": 29,
+   "district": "Yadgir",
+   "name": "Basava Sagara",
+   "category": "Heritage",
+   "lat": 16.17833,
+   "lon": 76.22444,
+   "coord_source": "wikipedia",
+   "description": "Basava Sagar Dam, previously known as Narayanpura Dam, is a dam constructed across the Krishna River at Yadgir District, Karnataka State, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Basava-sagar-dam-yadgir-raichur_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Basava-sagar-dam-yadgir-raichur_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Basava-sagar-dam-yadgir-raichur_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Basava_Sagara",
+   "qid": "Q6965574"
+  },
+  {
+   "district_id": 29,
+   "district": "Yadgir",
+   "name": "Sleeping Buddha Hill",
+   "category": "Hill Station",
+   "lat": 16.69056,
+   "lon": 76.83333,
+   "coord_source": "wikipedia",
+   "description": "Sleeping Buddha Hill is located near Shahapur town Shahapur taluk of Yadgir district in Karnataka state, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Budha_sleeping.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Budha_sleeping.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Budha_sleeping.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Sleeping_Buddha_Hill",
+   "qid": "Q7539851"
+  },
+  {
+   "district_id": 31,
+   "district": "Bidar",
+   "name": "Bidar Airport",
+   "category": "Heritage",
+   "lat": 17.9,
+   "lon": 77.47,
+   "coord_source": "wikipedia",
+   "description": "Bidar Airport (IATA: IXX, ICAO: VOBR) is a domestic airport serving the city of Bidar, Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Bidar_Airport.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Bidar_Airport.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Bidar_Airport.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Bidar_Airport",
+   "qid": "Q619672"
+  },
+  {
+   "district_id": 31,
+   "district": "Bidar",
+   "name": "Solah Khamba Mosque",
+   "category": "Heritage",
+   "lat": 17.9208,
+   "lon": 77.5281,
+   "coord_source": "wikipedia",
+   "description": "The Solah Khamba Mosque is a mosque within the Bidar Fort in Bidar, in the state of Karnataka, India.",
+   "fee_note": "Not verified for this site — check at the entrance",
+   "hours": "Not verified — check locally",
+   "season": "",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Solah_Khamba.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original/1280px-Solah_Khamba.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original",
+     "credit": "Wikimedia Commons",
+     "license": "see the file page on Commons",
+     "page": "https://commons.wikimedia.org/wiki/File:Solah_Khamba.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=original"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Solah_Khamba_Mosque",
+   "qid": "Q131471108"
   }
  ],
  "homestays": [
