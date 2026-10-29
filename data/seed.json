@@ -20628,6 +20628,40 @@
    "source": "wikipedia",
    "article": "https://en.wikipedia.org/wiki/Solah_Khamba_Mosque",
    "qid": "Q131471108"
+  },
+  {
+   "district": "Hassan",
+   "name": "Hasanamba Temple, Hassan",
+   "category": "Temple",
+   "lat": 13.00276,
+   "lon": 76.09461,
+   "coord_source": "openstreetmap",
+   "description": "Hasanamba temple is a Hindu temple in Hassan dedicated to the goddess Shakti, known here as Hasanamba or Hasanamma — the city itself is named after her. The temple is believed to date from the 12th century, and it opens to visitors only once a year, during the Deepavali week, when the town turns out to queue for darshan.",
+   "fee_note": "Free entry — confirm locally",
+   "hours": "Opens only during the Deepavali week each year — check the dates before travelling",
+   "season": "Deepavali week (the annual opening)",
+   "facilities": "",
+   "accessibility": "",
+   "demo_price": null,
+   "bookable": false,
+   "photos": [
+    {
+     "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Hasanambe_net.jpg/1280px-Hasanambe_net.jpg",
+     "credit": "Wikimedia Commons contributor",
+     "license": "CC0",
+     "page": "https://commons.wikimedia.org/wiki/File:Hasanambe_net.jpg"
+    },
+    {
+     "url": "https://upload.wikimedia.org/wikipedia/commons/1/19/Hasanambe.jpg",
+     "credit": "Wikimedia Commons contributor",
+     "license": "CC BY-SA 4.0",
+     "page": "https://commons.wikimedia.org/wiki/File:Hasanambe.jpg"
+    }
+   ],
+   "source": "wikipedia",
+   "article": "https://en.wikipedia.org/wiki/Hasanamba_Temple",
+   "qid": "Q24934719",
+   "district_id": 16
   }
  ],
  "homestays": [
