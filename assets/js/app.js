@@ -852,14 +852,38 @@
         "<td>" + money(b.amount) + "</td>" +
         '<td class="status ' + statusClass(b.status) + '">' + esc(b.status) + "</td>" +
         '<td class="small">' + (b.txn ? esc(b.txn) : "—") + "</td>" +
-        "<td>" + (b.status === "Confirmed (Demo)"
+        '<td class="row-actions">' +
+        (b.status === "Confirmed (Demo)"
           ? '<a class="btn sm ghost" href="ticket.html?ref=' + encodeURIComponent(b.ref) + '">' +
-            t("common.download") + "</a>" : "") + "</td></tr>";
+            t("common.download") + "</a> " : "") +
+        ((b.status === "Pending" || b.status === "Confirmed (Demo)")
+          ? '<button class="btn sm danger" type="button" data-cancel="' + esc(b.ref) + '">' +
+            t("my.cancel") + "</button>" : "") +
+        "</td></tr>";
     }).join("");
     setHTML("#bookings",
       '<div class="table-wrap"><table class="data"><thead><tr><th>Booking ID</th><th>Item</th><th>' +
       t("common.date") + "</th><th>Amount</th><th>" + t("common.status") + "</th><th>" + t("pay.txn") +
       "</th><th></th></tr></thead><tbody>" + rows + "</tbody></table></div>");
+
+    $$("[data-cancel]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var ref = btn.getAttribute("data-cancel");
+        if (!confirm(t("my.cancel_confirm"))) return;
+        var list = allBookings();
+        list.forEach(function (x) {
+          if (x.ref === ref && (x.status === "Pending" || x.status === "Confirmed (Demo)")) {
+            x.status = "Cancelled";
+            x.cancelled_at = new Date().toISOString();
+          }
+        });
+        saveBookings(list);
+        if (window.KT_AUTH && KT_AUTH.toast) {
+          KT_AUTH.toast(t("my.cancelled_title", "Booking cancelled"), ref, "warning");
+        }
+        renderBookingsPage();
+      });
+    });
   }
 
   function exportCsv() {

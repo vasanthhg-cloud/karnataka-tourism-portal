@@ -320,3 +320,9 @@ footer.site a:hover{color:var(--brand)}
 .helpline{font-size:.82rem;color:var(--muted);margin-bottom:6px}
 .helpline a{color:var(--brand);font-weight:600}
 .helpline a:hover{text-decoration:underline}
+
+/* ---------- cancel action ---------- */
+.btn.danger{background:transparent;color:var(--danger);border:1px solid color-mix(in srgb,var(--danger) 45%,transparent)}
+.btn.danger:hover{background:var(--danger-soft);color:var(--danger);transform:none}
+td.row-actions{white-space:nowrap}
+td.row-actions .btn{margin:2px 0}
